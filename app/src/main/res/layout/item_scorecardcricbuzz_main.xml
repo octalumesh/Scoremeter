@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItemSCorecardCricbuzzMainBinding">
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/firstInningScoreCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/card_view_white"
+                    android:elevation="@dimen/_2sdp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeFirst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/teamNameFirstInning"
+                            style="@style/font_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/txt_color"
+                            android:textSize="15sp"
+                            tools:text="Supernovas" />
+
+
+                        <TextView
+                            android:id="@+id/firstInningScore"
+                            style="@style/font_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_toLeftOf="@id/linearUpDown"
+                            android:textColor="@color/txt_color"
+                            android:textSize="15sp"
+                            tools:text=" 99/3 (35)" />
+
+                        <LinearLayout
+                            android:id="@+id/linearUpDown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/inning1Up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                                android:visibility="gone"
+                                app:tint="@color/txt_lgt" />
+
+                            <ImageView
+                                android:id="@+id/inning1Down"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                app:tint="@color/txt_lgt" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/firstInningLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/green_table"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <TextView
+                            style="@style/font_regular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="0.45"
+                            android:text="Batter"
+                            android:textColor="@color/txt_lgt" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_weight="0.55"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="R"
+                                android:textColor="@color/txt_lgt" />
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:text="B"
+                                android:textColor="@color/txt_lgt" />
+
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="4s"
+                                android:textColor="@color/txt_lgt" />
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="6s"
+                                android:textColor="@color/txt_lgt" />
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="SR"
+                                android:textColor="@color/txt_lgt" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/card_view_white"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerBatsmanFirst"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:itemCount="3"
+                            tools:listitem="@layout/item_scoreboard_batsman" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/font_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_toLeftOf="@id/extraLinear"
+                                android:text="@string/score_extra"
+                                android:textColor="@color/txt_color"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:id="@+id/extraLinear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="@dimen/_7sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/extrasTotal"
+                                    style="@style/font_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="15sp"
+                                    tools:text="7 " />
+
+                                <TextView
+                                    android:id="@+id/extras1St"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="14sp"
+                                    tools:text="@string/score_extra" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/font_medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:text="@string/score_total"
+                                android:textColor="@color/txt_color"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/scoreTotal1St"
+                                style="@style/font_medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_weight="2"
+                                android:gravity="end"
+                                android:textColor="@color/txt_color"
+                                android:textSize="15sp"
+                                tools:text="156-10" />
+
+                            <TextView
+                                android:id="@+id/currRate"
+                                style="@style/font_medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_7sdp"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:textColor="@color/txt_color"
+                                android:textSize="15sp"
+                                tools:text="CRR: 3.25" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearDidNotBat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/gray_view" />
+
+                            <TextView
+                                android:id="@+id/didNotBatText"
+                                style="@style/font_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Yet to Bat"
+                                android:textColor="@color/txt_color"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/didNotBatPlayer"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:text="Yet to Bat"
+                                android:textColor="@color/txt_lgt"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/green_table"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <TextView
+                            style="@style/font_regular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="0.45"
+                            android:text="Bowler"
+                            android:textColor="@color/txt_lgt" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_weight="0.55"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="O"
+                                android:textColor="@color/txt_lgt" />
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="M"
+                                android:textColor="@color/txt_lgt" />
+
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="R"
+                                android:textColor="@color/txt_lgt" />
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="W"
+                                android:textColor="@color/txt_lgt" />
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="ER"
+                                android:textColor="@color/txt_lgt" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/card_view_white"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerBowlerFirst"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:itemCount="3"
+                            tools:listitem="@layout/item_scoreboard_bolwer" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearFallWkt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/green_table"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_5sdp">
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_weight="0.50"
+                                android:text="@string/fall_of_wickets"
+                                android:textColor="@color/txt_lgt" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_weight="0.50"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:gravity="center"
+                                    android:text="Score"
+                                    android:textColor="@color/txt_lgt" />
+
+                                <TextView
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:gravity="center"
+                                    android:text="Over"
+                                    android:textColor="@color/txt_lgt" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_view_white"
+                            android:orientation="vertical">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerFallWicketFirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:itemCount="3"
+                                tools:listitem="@layout/item_scoreboard_wicket" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/powerplayLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/green_table"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_5sdp">
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_weight="0.50"
+                                android:text="Powerplay"
+                                android:textColor="@color/txt_lgt" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_weight="0.50"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:gravity="center"
+                                    android:text="Over"
+                                    android:textColor="@color/txt_lgt" />
+
+                                <TextView
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:gravity="center"
+                                    android:text="Runs"
+                                    android:textColor="@color/txt_lgt" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_view_white"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/powerplay"
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_weight="0.50"
+                                android:textColor="@color/txt_color"
+                                tools:text="Powerplay" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_weight="0.50"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/powerPlayOver"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:gravity="center"
+                                    android:textColor="@color/txt_color"
+                                    tools:text="Over" />
+
+                                <TextView
+                                    android:id="@+id/powerplayRuns"
+                                    style="@style/font_medium"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:gravity="center"
+                                    android:textColor="@color/txt_color"
+                                    tools:text="Runs" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

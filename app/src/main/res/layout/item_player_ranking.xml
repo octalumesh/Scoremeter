@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data
+        class="ItemPlayerRankingBinding">
+
+        <variable
+            name="listItem"
+            type="com.cricbuzzplus.liveline.livedata.response.PlayerRankingResponseItem" />
+
+    </data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                tools:text="Pos"
+                android:text="@{``+listItem.rank}"
+                android:textColor="@color/black"
+                style="@style/font_bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                tools:text="name"
+                android:text="@{listItem.name}"
+                android:gravity="center"
+                android:textColor="@color/black"
+                style="@style/font_bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                tools:text="country"
+                android:text="@{``+listItem.country}"
+                android:gravity="center"
+                android:textColor="@color/black"
+                style="@style/font_bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                tools:text="Point"
+                android:text="@{``+listItem.rating}"
+                android:gravity="center"
+                android:textColor="@color/black"
+                style="@style/font_bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

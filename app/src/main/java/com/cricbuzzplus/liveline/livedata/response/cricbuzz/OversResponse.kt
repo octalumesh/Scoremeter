@@ -1,0 +1,618 @@
+package com.cricbuzzplus.liveline.livedata.response.cricbuzz
+
+import com.google.gson.annotations.SerializedName
+
+data class OversResponse(
+
+	@field:SerializedName("batTeam")
+	val batTeam: OversBatTeam? = null,
+
+	@field:SerializedName("requiredRunRate")
+	val requiredRunRate: Any? = null,
+
+	@field:SerializedName("ppData")
+	val ppData: OversPpData? = null,
+
+	@field:SerializedName("bowlerNonStriker")
+	val bowlerNonStriker: OversBowlerNonStriker? = null,
+
+	@field:SerializedName("overSummaryList")
+	val overSummaryList: List<OverSummaryListItem?>? = null,
+
+	@field:SerializedName("responseLastUpdated")
+	val responseLastUpdated: Int? = null,
+
+	@field:SerializedName("latestPerformance")
+	val latestPerformance: List<OversLatestPerformanceItem?>? = null,
+
+	@field:SerializedName("overs")
+	val overs: Any? = null,
+
+	@field:SerializedName("currentRunRate")
+	val currentRunRate: Any? = null,
+
+	@field:SerializedName("matchUdrs")
+	val matchUdrs: OversMatchUdrs? = null,
+
+	@field:SerializedName("batsmanStriker")
+	val batsmanStriker: OversBatsmanStriker? = null,
+
+	@field:SerializedName("target")
+	val target: Int? = null,
+
+	@field:SerializedName("lastWicket")
+	val lastWicket: String? = null,
+
+	@field:SerializedName("remRunsToWin")
+	val remRunsToWin: Int? = null,
+
+	@field:SerializedName("matchScoreDetails")
+	val matchScoreDetails: OversMatchScoreDetails? = null,
+
+	@field:SerializedName("batsmanNonStriker")
+	val batsmanNonStriker: OversBatsmanNonStriker? = null,
+
+	@field:SerializedName("lastWicketScore")
+	val lastWicketScore: Int? = null,
+
+	@field:SerializedName("recentOvsStats")
+	val recentOvsStats: String? = null,
+
+	@field:SerializedName("partnerShip")
+	val partnerShip: OversPartnerShip? = null,
+
+	@field:SerializedName("event")
+	val event: String? = null,
+
+	@field:SerializedName("inningsId")
+	val inningsId: Int? = null,
+
+	@field:SerializedName("matchHeader")
+	val matchHeader: OversMatchHeader? = null,
+
+	@field:SerializedName("bowlerStriker")
+	val bowlerStriker: OversBowlerStriker? = null,
+
+	@field:SerializedName("status")
+	val status: String? = null
+)
+
+data class OversLatestPerformanceItem(
+
+	@field:SerializedName("wkts")
+	val wkts: Int? = null,
+
+	@field:SerializedName("label")
+	val label: String? = null,
+
+	@field:SerializedName("runs")
+	val runs: Int? = null
+)
+
+data class OversBatsmanStriker(
+
+	@field:SerializedName("batName")
+	val batName: String? = null,
+
+	@field:SerializedName("batId")
+	val batId: Int? = null,
+
+	@field:SerializedName("batDots")
+	val batDots: Int? = null,
+
+	@field:SerializedName("batMins")
+	val batMins: Int? = null,
+
+	@field:SerializedName("batFours")
+	val batFours: Int? = null,
+
+	@field:SerializedName("batStrikeRate")
+	val batStrikeRate: Any? = null,
+
+	@field:SerializedName("batBalls")
+	val batBalls: Int? = null,
+
+	@field:SerializedName("batRuns")
+	val batRuns: Int? = null,
+
+	@field:SerializedName("batSixes")
+	val batSixes: Int? = null
+)
+
+data class OversBatTeam(
+
+	@field:SerializedName("teamScore")
+	val teamScore: Int? = null,
+
+	@field:SerializedName("teamId")
+	val teamId: Int? = null,
+
+	@field:SerializedName("teamWkts")
+	val teamWkts: Int? = null
+)
+
+data class OversInningsScoreListItem(
+
+	@field:SerializedName("score")
+	val score: Int? = null,
+
+	@field:SerializedName("ballNbr")
+	val ballNbr: Int? = null,
+
+	@field:SerializedName("batTeamId")
+	val batTeamId: Int? = null,
+
+	@field:SerializedName("isDeclared")
+	val isDeclared: Boolean? = null,
+
+	@field:SerializedName("batTeamName")
+	val batTeamName: String? = null,
+
+	@field:SerializedName("overs")
+	val overs: Any? = null,
+
+	@field:SerializedName("wickets")
+	val wickets: Int? = null,
+
+	@field:SerializedName("inningsId")
+	val inningsId: Int? = null,
+
+	@field:SerializedName("isFollowOn")
+	val isFollowOn: Boolean? = null
+)
+
+data class OversBowlerStriker(
+
+	@field:SerializedName("bowlOvs")
+	val bowlOvs: Any? = null,
+
+	@field:SerializedName("bowlId")
+	val bowlId: Int? = null,
+
+	@field:SerializedName("bowlName")
+	val bowlName: String? = null,
+
+	@field:SerializedName("bowlNoballs")
+	val bowlNoballs: Int? = null,
+
+	@field:SerializedName("bowlEcon")
+	val bowlEcon: Any? = null,
+
+	@field:SerializedName("bowlMaidens")
+	val bowlMaidens: Int? = null,
+
+	@field:SerializedName("bowlWkts")
+	val bowlWkts: Int? = null,
+
+	@field:SerializedName("bowlRuns")
+	val bowlRuns: Int? = null,
+
+	@field:SerializedName("bowlWides")
+	val bowlWides: Int? = null
+)
+
+data class OversBatsmanNonStriker(
+
+	@field:SerializedName("batName")
+	val batName: String? = null,
+
+	@field:SerializedName("batId")
+	val batId: Int? = null,
+
+	@field:SerializedName("batDots")
+	val batDots: Int? = null,
+
+	@field:SerializedName("batMins")
+	val batMins: Int? = null,
+
+	@field:SerializedName("batFours")
+	val batFours: Int? = null,
+
+	@field:SerializedName("batStrikeRate")
+	val batStrikeRate: Any? = null,
+
+	@field:SerializedName("batBalls")
+	val batBalls: Int? = null,
+
+	@field:SerializedName("batRuns")
+	val batRuns: Int? = null,
+
+	@field:SerializedName("batSixes")
+	val batSixes: Int? = null
+)
+
+data class OversTeam2(
+
+	@field:SerializedName("name")
+	val name: String? = null,
+
+	@field:SerializedName("id")
+	val id: Int? = null,
+
+	@field:SerializedName("playerDetails")
+	val playerDetails: List<Any?>? = null,
+
+	@field:SerializedName("shortName")
+	val shortName: String? = null
+)
+
+data class OversBowlerNonStriker(
+
+	@field:SerializedName("bowlOvs")
+	val bowlOvs: Int? = null,
+
+	@field:SerializedName("bowlId")
+	val bowlId: Int? = null,
+
+	@field:SerializedName("bowlName")
+	val bowlName: String? = null,
+
+	@field:SerializedName("bowlNoballs")
+	val bowlNoballs: Int? = null,
+
+	@field:SerializedName("bowlEcon")
+	val bowlEcon: Any? = null,
+
+	@field:SerializedName("bowlMaidens")
+	val bowlMaidens: Int? = null,
+
+	@field:SerializedName("bowlWkts")
+	val bowlWkts: Int? = null,
+
+	@field:SerializedName("bowlRuns")
+	val bowlRuns: Int? = null,
+
+	@field:SerializedName("bowlWides")
+	val bowlWides: Int? = null
+)
+
+data class OversMatchUdrs(
+
+	@field:SerializedName("team2Remaining")
+	val team2Remaining: Int? = null,
+
+	@field:SerializedName("team2Id")
+	val team2Id: Int? = null,
+
+	@field:SerializedName("team1Unsuccessful")
+	val team1Unsuccessful: Int? = null,
+
+	@field:SerializedName("team2Successful")
+	val team2Successful: Int? = null,
+
+	@field:SerializedName("team1Remaining")
+	val team1Remaining: Int? = null,
+
+	@field:SerializedName("team1Id")
+	val team1Id: Int? = null,
+
+	@field:SerializedName("team2Unsuccessful")
+	val team2Unsuccessful: Int? = null,
+
+	@field:SerializedName("team1Successful")
+	val team1Successful: Int? = null,
+
+	@field:SerializedName("matchId")
+	val matchId: Int? = null,
+
+	@field:SerializedName("inningsId")
+	val inningsId: Int? = null,
+
+	@field:SerializedName("timestamp")
+	val timestamp: String? = null
+)
+
+data class OversMatchHeader(
+
+	@field:SerializedName("playersOfTheSeries")
+	val playersOfTheSeries: List<Any?>? = null,
+
+	@field:SerializedName("matchDescription")
+	val matchDescription: String? = null,
+
+	@field:SerializedName("year")
+	val year: Int? = null,
+
+	@field:SerializedName("matchType")
+	val matchType: String? = null,
+
+	@field:SerializedName("matchFormat")
+	val matchFormat: String? = null,
+
+	@field:SerializedName("seriesId")
+	val seriesId: Int? = null,
+
+	@field:SerializedName("domestic")
+	val domestic: Boolean? = null,
+
+	@field:SerializedName("result")
+	val result: OversResult? = null,
+
+	@field:SerializedName("livestreamEnabled")
+	val livestreamEnabled: Boolean? = null,
+
+	@field:SerializedName("tossResults")
+	val tossResults: OversTossResults? = null,
+
+	@field:SerializedName("state")
+	val state: String? = null,
+
+	@field:SerializedName("matchId")
+	val matchId: Int? = null,
+
+	@field:SerializedName("matchTeamInfo")
+	val matchTeamInfo: List<OversMatchTeamInfoItem?>? = null,
+
+	@field:SerializedName("alertType")
+	val alertType: String? = null,
+
+	@field:SerializedName("playersOfTheMatch")
+	val playersOfTheMatch: List<OversPlayersOfTheMatchItem?>? = null,
+
+	@field:SerializedName("matchCompleteTimestamp")
+	val matchCompleteTimestamp: Long? = null,
+
+	@field:SerializedName("team1")
+	val team1: OversTeam1? = null,
+
+	@field:SerializedName("seriesName")
+	val seriesName: String? = null,
+
+	@field:SerializedName("team2")
+	val team2: OversTeam2? = null,
+
+	@field:SerializedName("seriesDesc")
+	val seriesDesc: String? = null,
+
+	@field:SerializedName("dayNight")
+	val dayNight: Boolean? = null,
+
+	@field:SerializedName("isMatchNotCovered")
+	val isMatchNotCovered: Boolean? = null,
+
+	@field:SerializedName("complete")
+	val complete: Boolean? = null,
+
+	@field:SerializedName("revisedTarget")
+	val revisedTarget: OversRevisedTarget? = null,
+
+	@field:SerializedName("matchStartTimestamp")
+	val matchStartTimestamp: Long? = null,
+
+	@field:SerializedName("status")
+	val status: String? = null
+)
+
+data class OversPp1(
+
+	@field:SerializedName("ppOversFrom")
+	val ppOversFrom: Any? = null,
+
+	@field:SerializedName("runsScored")
+	val runsScored: Int? = null,
+
+	@field:SerializedName("ppOversTo")
+	val ppOversTo: Int? = null,
+
+	@field:SerializedName("ppType")
+	val ppType: String? = null,
+
+	@field:SerializedName("ppId")
+	val ppId: Int? = null
+)
+
+data class OversMatchTeamInfoItem(
+
+	@field:SerializedName("battingTeamId")
+	val battingTeamId: Int? = null,
+
+	@field:SerializedName("battingTeamShortName")
+	val battingTeamShortName: String? = null,
+
+	@field:SerializedName("bowlingTeamId")
+	val bowlingTeamId: Int? = null,
+
+	@field:SerializedName("bowlingTeamShortName")
+	val bowlingTeamShortName: String? = null
+)
+
+data class OversPpData(
+
+	@field:SerializedName("pp_1")
+	val pp1: OversPp1? = null
+)
+
+data class OversTossResults(
+
+	@field:SerializedName("decision")
+	val decision: String? = null,
+
+	@field:SerializedName("tossWinnerName")
+	val tossWinnerName: String? = null,
+
+	@field:SerializedName("tossWinnerId")
+	val tossWinnerId: Int? = null
+)
+
+data class OverSummaryListItem(
+
+	@field:SerializedName("overNum")
+	val overNum: Any? = null,
+
+	@field:SerializedName("batNonStrikerIds")
+	val batNonStrikerIds: List<Int?>? = null,
+
+	@field:SerializedName("batNonStrikerRuns")
+	val batNonStrikerRuns: Int? = null,
+
+	@field:SerializedName("batStrikerNames")
+	val batStrikerNames: List<String?>? = null,
+
+	@field:SerializedName("batNonStrikerBalls")
+	val batNonStrikerBalls: Int? = null,
+
+	@field:SerializedName("bowlOvers")
+	val bowlOvers: Any? = null,
+
+	@field:SerializedName("bowlWickets")
+	val bowlWickets: Int? = null,
+
+	@field:SerializedName("score")
+	val score: Int? = null,
+
+	@field:SerializedName("batNonStrikerNames")
+	val batNonStrikerNames: List<String?>? = null,
+
+	@field:SerializedName("o_summary")
+	val oSummary: String? = null,
+
+	@field:SerializedName("bowlMaidens")
+	val bowlMaidens: Int? = null,
+
+	@field:SerializedName("batStrikerIds")
+	val batStrikerIds: List<Int?>? = null,
+
+	@field:SerializedName("batStrikerBalls")
+	val batStrikerBalls: Int? = null,
+
+	@field:SerializedName("bowlNames")
+	val bowlNames: List<String?>? = null,
+
+	@field:SerializedName("batTeamName")
+	val batTeamName: String? = null,
+
+	@field:SerializedName("bowlRuns")
+	val bowlRuns: Int? = null,
+
+	@field:SerializedName("batStrikerRuns")
+	val batStrikerRuns: Int? = null,
+
+	@field:SerializedName("event")
+	val event: String? = null,
+
+	@field:SerializedName("wickets")
+	val wickets: Int? = null,
+
+	@field:SerializedName("runs")
+	val runs: Int? = null,
+
+	@field:SerializedName("bowlIds")
+	val bowlIds: List<Int?>? = null,
+
+	@field:SerializedName("inningsId")
+	val inningsId: Int? = null,
+
+	@field:SerializedName("timestamp")
+	val timestamp: Long? = null
+)
+
+data class OversMatchScoreDetails(
+
+	@field:SerializedName("inningsScoreList")
+	val inningsScoreList: List<OversInningsScoreListItem?>? = null,
+
+	@field:SerializedName("customStatus")
+	val customStatus: String? = null,
+
+	@field:SerializedName("tossResults")
+	val tossResults: OversTossResults? = null,
+
+	@field:SerializedName("isMatchNotCovered")
+	val isMatchNotCovered: Boolean? = null,
+
+	@field:SerializedName("highlightedTeamId")
+	val highlightedTeamId: Int? = null,
+
+	@field:SerializedName("matchFormat")
+	val matchFormat: String? = null,
+
+	@field:SerializedName("state")
+	val state: String? = null,
+
+	@field:SerializedName("matchId")
+	val matchId: Int? = null,
+
+	@field:SerializedName("matchTeamInfo")
+	val matchTeamInfo: List<MatchTeamInfoItem?>? = null
+)
+
+data class OversTeam1(
+
+	@field:SerializedName("name")
+	val name: String? = null,
+
+	@field:SerializedName("id")
+	val id: Int? = null,
+
+	@field:SerializedName("playerDetails")
+	val playerDetails: List<Any?>? = null,
+
+	@field:SerializedName("shortName")
+	val shortName: String? = null
+)
+
+data class OversResult(
+
+	@field:SerializedName("winningMargin")
+	val winningMargin: Int? = null,
+
+	@field:SerializedName("winningTeam")
+	val winningTeam: String? = null,
+
+	@field:SerializedName("winByRuns")
+	val winByRuns: Boolean? = null,
+
+	@field:SerializedName("winningteamId")
+	val winningteamId: Int? = null,
+
+	@field:SerializedName("winByInnings")
+	val winByInnings: Boolean? = null,
+
+	@field:SerializedName("resultType")
+	val resultType: String? = null
+)
+
+data class OversRevisedTarget(
+
+	@field:SerializedName("reason")
+	val reason: String? = null
+)
+
+data class OversPlayersOfTheMatchItem(
+
+	@field:SerializedName("teamName")
+	val teamName: String? = null,
+
+	@field:SerializedName("nickName")
+	val nickName: String? = null,
+
+	@field:SerializedName("faceImageId")
+	val faceImageId: Int? = null,
+
+	@field:SerializedName("keeper")
+	val keeper: Boolean? = null,
+
+	@field:SerializedName("name")
+	val name: String? = null,
+
+	@field:SerializedName("fullName")
+	val fullName: String? = null,
+
+	@field:SerializedName("id")
+	val id: Int? = null,
+
+	@field:SerializedName("captain")
+	val captain: Boolean? = null,
+
+	@field:SerializedName("substitute")
+	val substitute: Boolean? = null
+)
+
+data class OversPartnerShip(
+
+	@field:SerializedName("balls")
+	val balls: Int? = null,
+
+	@field:SerializedName("runs")
+	val runs: Int? = null
+)

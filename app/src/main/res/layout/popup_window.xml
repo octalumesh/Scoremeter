@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keepScreenOn="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data
+        class="ItemWidgetBindingLayout">
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:id="@+id/parentWidget"
+        android:background="@android:color/transparent">
+
+
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:visibility="visible"-->
+<!--            android:id="@+id/lottieanimationview_live_popup"-->
+<!--            android:layout_toRightOf="@+id/teams"-->
+<!--            android:layout_width="11dp"-->
+<!--            android:layout_height="11dp"-->
+<!--            android:layout_toLeftOf="@+id/teams"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"-->
+<!--            android:layout_marginTop="8dp"/>-->
+
+        <ImageView
+            android:id="@+id/window_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/card"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="@color/yellow_lgt"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/close_ic" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_1sdp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_below="@id/window_close"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/testRuns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="" />
+
+                <RelativeLayout
+                    android:id="@+id/rateBallRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/testRuns"
+                    android:paddingLeft="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/teamRunRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        android:textSize="7sp"
+                        tools:text="CRR: 0.0" />
+
+                    <LinearLayout
+                        android:id="@+id/popup_firstcircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/teamRunRate"
+                        android:background="@drawable/popup_shape"
+                        android:paddingLeft="@dimen/_2sdp"
+                        android:paddingRight="@dimen/_2sdp"
+                        android:backgroundTint="@color/yellow_lgt"
+                        android:layout_gravity="end">
+
+                        <ImageView
+                            android:id="@+id/img_volume"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="start"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_baseline_volume_off_24" />
+
+
+                        <TextView
+                            android:id="@+id/teamCurrentRun"
+                            android:layout_width="@dimen/_32sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:paddingHorizontal="@dimen/_3sdp"
+                            tools:text="Ovr"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/scoreRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rateBallRl"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/scoreRelative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/teamImg"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_launcher_round" />
+
+                        <TextView
+                            android:id="@+id/teams"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_toRightOf="@id/teamImg"
+                            android:padding="@dimen/_3sdp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            style="@style/font_regular"
+                            android:text="team Vs team" />
+
+                        <TextView
+                            android:id="@+id/teamName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_below="@id/teamImg"
+                            android:text="-"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_toRightOf="@id/teamImg"
+                            android:layout_below="@id/teamImg">
+
+
+                            <TextView
+                                android:id="@+id/teamRun"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0-0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/teamOver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:paddingHorizontal="@dimen/_3sdp"
+                                android:text="0.0"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linearOddsPin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:layout_below="@+id/scoreRelative"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/sessionLinear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:visibility="visible">
+
+
+                            <LinearLayout
+                                android:id="@+id/linearSessionTeam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/teamNameSession"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_team_widget"
+                                    android:backgroundTint="@color/blue_aqva"
+                                    style="@style/font_bold"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingRight="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Ind"
+                                    android:textColor="@color/white"
+                                    android:textSize="8sp" />
+
+                                <TextView
+                                    android:id="@+id/sessionMin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@drawable/shape_session_min"
+                                    android:backgroundTint="@color/odds_max"
+                                    style="@style/font_regular"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingRight="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp" />
+
+                                <TextView
+                                    android:id="@+id/sessionMax"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_session_max"
+                                    android:backgroundTint="@color/odds_min"
+                                    style="@style/font_regular"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingRight="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="88"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearSessionOver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/sessionOver"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_team_widget"
+                                    android:backgroundTint="@color/blue_aqva"
+                                    style="@style/font_regular"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingRight="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:textColor="@color/white"
+                                    android:textSize="8sp"
+                                    tools:text="Ovr-3" />
+
+                                <TextView
+                                    android:id="@+id/sessionSMin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@drawable/shape_session_min"
+                                    android:backgroundTint="@color/odds_min"
+                                    style="@style/font_regular"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingRight="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp"
+                                    tools:text="80" />
+
+                                <TextView
+                                    android:id="@+id/sessionSMax"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_session_max"
+                                    android:backgroundTint="@color/odds_max"
+                                    style="@style/font_regular"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingRight="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp"
+                                    tools:text="88" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/teamTossOrRequire"
+                        style="@style/font_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/scoreRelative"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:maxWidth="@dimen/_110sdp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" />
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+</layout>

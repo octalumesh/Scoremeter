@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".livedata.ui.activity.wallet.WalletActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_40sdp"
+                style="@style/font_bold"
+                android:text="Wallet"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wallet_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Points (1pt. = \u20B91)"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        style="@style/font_bold"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/totalPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="105454"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        style="@style/font_bold"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/withdrawPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Withdraw Points"
+                    android:textColor="#00CD2D"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/white"
+                    android:textSize="16sp"
+                    android:padding="@dimen/_5sdp"
+                    style="@style/font_bold"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                >
+
+                <ImageView
+                    android:id="@+id/iconMoney"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/money"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@id/withdrawNow"
+                    android:layout_toRightOf="@id/iconMoney"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Winnings"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        style="@style/font_bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/totalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="\u20B954545"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        style="@style/font_bold"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/withdrawNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Withdraw Now"
+                    android:textColor="#00CD2D"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/white"
+                    android:textSize="16sp"
+                    android:padding="@dimen/_5sdp"
+                    style="@style/font_bold"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/kycApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle_polls">
+
+
+            <ImageView
+                android:id="@+id/kycIcon"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/kyc_icon" />
+
+
+            <TextView
+                android:id="@+id/textkyc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KYC &amp; Verify Details"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_toLeftOf="@id/forwardKycIcon"
+                android:layout_toRightOf="@id/kycIcon"
+                android:layout_centerVertical="true"
+                style="@style/font_bold"
+                />
+
+
+            <ImageView
+                android:id="@+id/forwardKycIcon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_forward_24" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/transactionHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle_polls">
+
+
+            <ImageView
+                android:id="@+id/transactionIcon"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/transaction_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@id/forwardtransactionIcon"
+                android:layout_toRightOf="@id/transactionIcon">
+
+
+                <TextView
+                    android:id="@+id/transactionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recent Transaction"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    style="@style/font_bold"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All Transaction withdraw and winning"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="13sp"
+                    style="@style/font_bold"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/forwardtransactionIcon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_forward_24" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+</layout>

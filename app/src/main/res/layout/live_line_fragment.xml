@@ -1,0 +1,3075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="LiveLineNewFragmentBinding">
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        tools:context=".livedata.ui.fragment.LiveLineNewFragment">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_livescorepage_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_10sdp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/linearMainScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_view_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/finishedLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/teamAShortFinish"
+                            style="@style/font_regular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.30"
+                            android:text="-"
+                            android:textColor="@color/txt_color"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:id="@+id/teamAScoreFinish"
+                            style="@style/font_regular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.70"
+                            android:text="-"
+                            android:textColor="@color/txt_color"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/teamBShortFinish"
+                            style="@style/font_regular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.30"
+                            android:text="-"
+                            android:textColor="@color/txt_color"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:id="@+id/teamBScoreFinish"
+                            style="@style/font_regular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.70"
+                            android:text="-"
+                            android:textColor="@color/txt_color"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/liveLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/teamShortLive"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/txt_color"
+                                android:textSize="18sp"
+                                tools:text="IND" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/teamScoreLive"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.30"
+                                    android:text="-"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="20sp" />
+
+
+                                <TextView
+                                    android:id="@+id/teamOverLive"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:text="-"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CRR"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/currRate"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:text="-"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/reqRRLinear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="REQ"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/reqRate"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="13sp"
+                                    tools:text="4.87" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@color/gray_view" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_run_6"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_weight="0.50">
+
+                        <ImageView
+                            android:id="@+id/img_volume_commentry"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_baseline_volume_off_24"
+                            app:tint="@color/txt_color" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+
+                            <TextView
+                                android:id="@+id/textview_matchrunslive"
+                                style="@style/font_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:gravity="center_horizontal"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/yellow_lgt"
+                                android:textSize="16sp" />
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/lottieanimationview_out"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true" />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/resultToss"
+                    style="@style/font_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/bluene1"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:text="India won by 100 runs" />
+
+
+            </LinearLayout>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll_livescore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarSize="0dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp">
+
+
+                    <!--                odds for t20, odi matches-->
+
+
+                    <LinearLayout
+                        android:id="@+id/linerlayout_odds_odi_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:background="@color/card_view_white"
+                        android:foregroundGravity="right|center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relative_odds_odi1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:padding="1dp">
+
+                            <TextView
+                                android:id="@+id/tv_odi_run_needed2"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_8sdp"
+                                android:text=""
+                                android:textColor="@color/red_mild"
+                                android:textSize="12sp" />
+
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            style="@style/font_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fav"
+                            android:textColor="@color/green_lgt_odds2"
+                            android:textSize="6sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_odds_odi2"
+                            style="@style/font_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:text=""
+                            android:textColor="@color/green_lgt_odds2"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <!--                    </RelativeLayout>-->
+
+                        <RelativeLayout
+                            android:id="@+id/relative_odds_odi3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right">
+
+                            <TextView
+                                android:id="@+id/tv_odds_odi_19"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="6dp"
+                                android:background="@drawable/shape_rectangle"
+                                android:backgroundTint="@color/odds_max"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="2dp"
+                                android:text="-"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_odds_odi_20"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_toRightOf="@+id/tv_odds_odi_19"
+                                android:background="@drawable/shape_rectangle"
+                                android:backgroundTint="@color/odds_min"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="2dp"
+                                android:text="-"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--                target and needs runs in balls -->
+
+
+                    <!--                odds for test match-->
+                    <LinearLayout
+                        android:id="@+id/linerlayout_odds_test_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:background="@color/card_view_white"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:id="@+id/relative_odds"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:background="@color/card_view_white"
+                            android:padding="1dp"
+                            android:paddingBottom="4dp">
+
+                            <TextView
+                                android:id="@+id/tv_team_a_odds"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="4dp"
+                                android:textColor="@color/darkstatusbar_teamname"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_team_a_odds"
+                                android:layout_centerHorizontal="true">
+
+                                <TextView
+                                    android:id="@+id/tv_team_a_odds1"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_left"
+                                    android:backgroundTint="@color/odds_max"
+                                    android:paddingHorizontal="6dp"
+                                    android:paddingVertical="3dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_team_a_odds1_t1"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/tv_team_a_odds1"
+                                    android:background="@drawable/shape_right"
+                                    android:backgroundTint="@color/odds_min"
+                                    android:paddingHorizontal="6dp"
+                                    android:paddingVertical="3dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/side_divider3" />
+
+                        <RelativeLayout
+                            android:id="@+id/relative_odds2"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:background="@color/card_view_white"
+                            android:padding="1dp">
+
+                            <TextView
+                                android:id="@+id/tv_team_b_odds"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="4dp"
+                                android:textColor="@color/darkstatusbar_teamname"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_team_b_odds"
+                                android:layout_centerHorizontal="true">
+
+                                <TextView
+                                    android:id="@+id/tv_team_draw_odds1"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_left"
+                                    android:backgroundTint="@color/odds_max"
+                                    android:paddingHorizontal="6dp"
+                                    android:paddingVertical="3dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_team_a_odds1_t2"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/tv_team_draw_odds1"
+                                    android:background="@drawable/shape_right"
+                                    android:backgroundTint="@color/odds_min"
+                                    android:paddingHorizontal="6dp"
+                                    android:paddingVertical="3dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/side_divider3" />
+
+                        <RelativeLayout
+                            android:id="@+id/relative_odds3"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:background="@color/card_view_white"
+                            android:padding="1dp">
+
+                            <TextView
+                                android:id="@+id/tv_draw_odds"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="4dp"
+                                android:text="Draw"
+                                android:textColor="@color/darkstatusbar_teamname"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_draw_odds"
+                                android:layout_centerHorizontal="true">
+
+                                <TextView
+                                    android:id="@+id/tv_team_b_odds1"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_left"
+                                    android:backgroundTint="@color/odds_max"
+                                    android:paddingHorizontal="6dp"
+                                    android:paddingVertical="3dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_team_a_odds1_t3"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@id/tv_team_b_odds1"
+                                    android:background="@drawable/shape_right"
+                                    android:backgroundTint="@color/odds_min"
+                                    android:paddingHorizontal="6dp"
+                                    android:paddingVertical="3dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--                1st session runs-->
+                    <LinearLayout
+                        android:id="@+id/layout_livepage_session1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:background="@color/card_view_white"
+                        android:foregroundGravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:id="@+id/relative_session_run_remain"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/shape_rectangle"
+                                    android:backgroundTint="@color/odds_left_back"
+                                    android:paddingHorizontal="12sp">
+
+                                    <TextView
+                                        android:id="@+id/tv_session_run_needed2"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:text="-"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_session_run_needed"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_toRightOf="@id/tv_session_run_needed2"
+                                        android:text="Run"
+                                        android:textColor="@color/white"
+                                        android:textSize="8sp" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_rxball"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_toRightOf="@id/tv_session_run_needed2"
+                                    android:text="X"
+                                    android:textColor="@color/green_lgt_odds2"
+                                    android:textSize="8sp"
+                                    android:visibility="gone" />
+
+                                <RelativeLayout
+                                    android:id="@+id/relative_session_ball_remain"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/shape_rectangle"
+                                    android:backgroundTint="@color/red_mild"
+                                    android:paddingHorizontal="10dp">
+
+
+                                    <TextView
+                                        android:id="@+id/tv_session_ball_remain2"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:text="-"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_session_ball_remain"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_toRightOf="@+id/tv_session_ball_remain2"
+                                        android:text="Ball"
+                                        android:textColor="@color/white"
+                                        android:textSize="8sp" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/relative_yes_session"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="6dp"
+                                    android:background="@color/card_view_white"
+                                    android:gravity="right"
+                                    android:padding="1dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_session_live"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginLeft="1dp"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_odds_odi2111"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_session_live"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="Ovr "
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <!--                        <TextView-->
+                                    <!--                            android:id="@+id/tv_session_live2"-->
+                                    <!--                            android:layout_below="@id/tv_session_live"-->
+                                    <!--                            android:layout_centerHorizontal="true"-->
+                                    <!--                            android:textSize="15sp"-->
+                                    <!--                            android:text="1.47"-->
+                                    <!--                            android:layout_height="wrap_content"-->
+                                    <!--                            android:textColor="@color/gray"-->
+                                    <!--                            android:textStyle="bold"-->
+                                    <!--                            android:layout_width="wrap_content" />-->
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/relative_yes_session2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="6dp"
+                                    android:background="@drawable/shape_rectangle"
+                                    android:backgroundTint="@color/odds_min"
+                                    android:paddingHorizontal="12sp">
+
+                                    <TextView
+                                        android:id="@+id/tv_session_live3"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:text="No"
+                                        android:textColor="@color/black"
+                                        android:textSize="9sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_session_live4"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_toRightOf="@id/tv_session_live3"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/relative_yes_session3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/shape_rectangle"
+                                    android:backgroundTint="@color/odds_max"
+                                    android:gravity="center"
+                                    android:paddingHorizontal="12sp">
+
+                                    <TextView
+                                        android:id="@+id/tv_session_live5"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:text="Yes "
+                                        android:textColor="@color/black"
+                                        android:textSize="9sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_session_live6"
+                                        style="@style/font_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_toRightOf="@id/tv_session_live5"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--                lambi session runs-->
+                    <LinearLayout
+                        android:id="@+id/linearlayout_session_lambi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:background="@color/card_view_white"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:id="@+id/relative_session_run_remain_lambi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/shape_rectangle"
+                                android:backgroundTint="@color/odds_left_back"
+                                android:paddingHorizontal="12sp">
+
+                                <TextView
+                                    android:id="@+id/tv_session_run_needed2_lambi"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="-"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_session_run_needed_lambi"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_toRightOf="@id/tv_session_run_needed2_lambi"
+                                    android:text="Run"
+                                    android:textColor="@color/white"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/relative_session_ball_remain_lambi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/shape_rectangle"
+                                android:backgroundTint="@color/red_mild"
+                                android:paddingHorizontal="10dp">
+
+
+                                <TextView
+                                    android:id="@+id/tv_session_ball_remain2_lambi"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="-"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_session_ball_remain_lambi"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_toRightOf="@+id/tv_session_ball_remain2_lambi"
+                                    android:text="Ball"
+                                    android:textColor="@color/white"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_yes_session_lambi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp"
+                            android:background="@color/card_view_white"
+                            android:gravity="right"
+                            android:padding="1dp">
+
+                            <TextView
+                                android:id="@+id/tv_session_live_lambi"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="3dp"
+                                android:textColor="@color/txt_color"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_odds_odi21111"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_session_live_lambi"
+                                android:layout_centerHorizontal="true"
+                                android:text="Ovr "
+                                android:textColor="@color/txt_color"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                            <!--                        <TextView-->
+                            <!--                            android:id="@+id/tv_session_live2"-->
+                            <!--                            android:layout_below="@id/tv_session_live"-->
+                            <!--                            android:layout_centerHorizontal="true"-->
+                            <!--                            android:textSize="15sp"-->
+                            <!--                            android:text="1.47"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:textColor="@color/gray"-->
+                            <!--                            android:textStyle="bold"-->
+                            <!--                            android:layout_width="wrap_content" />-->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_yes_session2_lambi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/shape_rectangle"
+                            android:backgroundTint="@color/odds_min"
+                            android:paddingHorizontal="12sp">
+
+                            <TextView
+                                android:id="@+id/tv_session_live3_lambi"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="No"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:id="@+id/tv_session_live4_lambi"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@id/tv_session_live3_lambi"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_yes_session3_lambi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_rectangle"
+                            android:backgroundTint="@color/odds_max"
+                            android:gravity="center"
+                            android:paddingHorizontal="12sp">
+
+                            <TextView
+                                android:id="@+id/tv_session_live5_lambi"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Yes "
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:id="@+id/tv_session_live6_lambi"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@id/tv_session_live5_lambi"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--                lead runs in test-->
+                    <LinearLayout
+                        android:id="@+id/linerlayout_lead_trial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:layout_marginVertical="3dp"
+                        android:background="@drawable/shape_rectangle"
+                        android:backgroundTint="@color/card_view_white"
+                        android:elevation="@dimen/_5sdp"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="5dp"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/card_view_white"
+                            android:padding="1dp">
+
+                            <TextView
+                                android:id="@+id/tv_lead_test"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/darkstatusbar_teamname"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--                batsman show area-->
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/card_view_white"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="7dp">
+
+                        <LinearLayout
+                            android:id="@+id/relative_livepage4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:paddingHorizontal="4dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearTarget"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    style="@style/font_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="TAR"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_target"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_toRightOf="@+id/textview_parternship1"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="14sp"
+                                    tools:text="444" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.40"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textview_parternship1"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="P'Ship"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_parternship"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_toRightOf="@+id/textview_parternship1"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="14sp"
+                                    tools:text="444(452)" />
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="0.50"
+                                android:gravity="right">
+
+                                <TextView
+                                    android:id="@+id/textview_last_wicket1"
+                                    style="@style/font_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/live_lastwicket"
+                                    android:textColor="@color/red_mild"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_last_wicket"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_toRightOf="@+id/textview_last_wicket1"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="12sp"
+                                    tools:text="Kane Williumson 124(246)" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/relative_livepage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relative_livepage4"
+                            android:layout_marginBottom="4dp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_3sdp">
+
+                            <TextView
+                                android:id="@+id/textview_bats1"
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.40"
+                                android:text="Batter "
+                                android:textColor="@color/txt_lgt"
+                                android:textSize="14sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.60"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textview_batsman_details1_scoreboard_run2"
+                                    style="@style/font_medium"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="R"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_batsman_details1_scoreboard_ball2"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="B"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_batsman_details1_scoreboar_4s2"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="4s"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_batsman_details1_scoreboard_6s2"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="6s"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_batsman_details1_scoreboard_strate2"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal"
+                                    android:text="SR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <include
+                            android:id="@+id/include_divider0"
+                            layout="@layout/item_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/relative_livepage1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/relative_recycler_batsman"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_below="@+id/relative_livepage1"
+                            android:layout_marginTop="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerview_batsman_live"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                    tools:listitem="@layout/item_batsman_live_commentary" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <include
+                            android:id="@+id/include_dividernext"
+                            layout="@layout/item_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/relative_recycler_batsman"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/liNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/include_dividernext"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/font_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Next Batsman: "
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textview_nextBatsman"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                        <include
+                            android:id="@+id/include_dividerYetBat"
+                            layout="@layout/item_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/liNext"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/include_dividerYetBat"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/font_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yet to Bat: "
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textview_yetToBat"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <!--                bowler show area-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/card_view_white"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="7dp">
+
+                        <LinearLayout
+                            android:id="@+id/relative_livepage5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_3sdp">
+
+                            <TextView
+                                android:id="@+id/textview_bats9"
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.40"
+                                android:text="Bowler: "
+                                android:textColor="@color/txt_lgt"
+                                android:textSize="13sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.60"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textview_scoreboard_bowler_over1"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="O"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_scoreboard_bowler_maiden1"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="M"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_scoreboard_bowler_run1"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="R"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_scoreboard_bowler_wkt1"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="W"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_scoreboard_bowler_eco1"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal"
+                                    android:text="ER"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textview_bats10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="Ovr       Run    Wkt     Mdn       eco  "
+                                android:textColor="@color/gray"
+                                android:textSize="9sp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <include
+                            android:id="@+id/include_divider3"
+                            layout="@layout/item_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/relative_livepage5"
+                            android:layout_marginVertical="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/relative_livepage6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/include_divider3"
+                            android:layout_marginBottom="4dp"
+                            android:paddingHorizontal="5dp">
+
+                            <TextView
+                                android:id="@+id/textview_bowler_name"
+                                style="@style/font_medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.40"
+                                android:textColor="@color/gray_scrbordbtn_act"
+                                android:textSize="12sp"
+                                tools:text="Azmatullhah Omerzai" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.60">
+
+                                <TextView
+                                    android:id="@+id/bowler_over"
+                                    style="@style/font_medium"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="--"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/bowler_maiden"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="--"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/bowler_run"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="--"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/bowler_wkt"
+                                    style="@style/font_medium"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="--"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/bowler_eco"
+                                    style="@style/font_regular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal"
+                                    android:text="--"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linerlayout_overs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:background="@color/card_view_white"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="10dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_over_lastball"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:outlineSpotShadowColor="@color/dark_black"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+                    </LinearLayout>
+
+
+                    <!--                team a and team b score innings show -->
+                    <LinearLayout
+                        android:id="@+id/linerlayout_test_2innings_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/relative_test_scores_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="7dp"
+                            android:paddingVertical="5dp"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_team_a_score_est_ining"
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="--"
+                                android:textColor="@color/txt_color"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_team_b_score_est_ining"
+                                style="@style/font_regular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="--"
+                                android:textColor="@color/txt_color"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/inningsSessionLinearComp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/font_semibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Session Summary"
+                            android:textColor="@color/txt_color"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/inning2SessionCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="@dimen/_5sdp"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/card_view_white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_6sdp">
+
+                                <RelativeLayout
+                                    android:id="@+id/rl2NdSession"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:orientation="horizontal">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/inning2SessionImage"
+                                            android:layout_width="@dimen/_20sdp"
+                                            android:layout_height="@dimen/_20sdp"
+                                            android:layout_gravity="center"
+                                            android:src="@mipmap/ic_launcher_round" />
+
+                                        <TextView
+                                            android:id="@+id/inning2SessionTeamName"
+                                            style="@style/font_bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="@dimen/_10sdp"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp"
+                                            tools:text="Ind - 2nd Inn" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/session2ndUpDown"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_up"
+                                        app:tint="@color/txt_color" />
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear2ndSession"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+                                    <include
+                                        layout="@layout/item_divider"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="5dp"
+                                        tools:ignore="IncludeLayoutParam" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_margin="@dimen/_5sdp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+                                            android:text="Session:"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:text="Open"
+                                            android:visibility="gone"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:text="Min"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:text="Max"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:text="Pass"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:text="Wkt"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+                                            android:gravity="center_horizontal"
+                                            android:text="Odds"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/recyclerSessionInning2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        tools:itemCount="2"
+                                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                        tools:listitem="@layout/item_session_live_layout" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/inning1SessionCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="@dimen/_5sdp"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/card_view_white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_6sdp">
+
+                                <RelativeLayout
+                                    android:id="@+id/rl1StSession"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:orientation="horizontal">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/inning1SessionImage"
+                                            android:layout_width="@dimen/_20sdp"
+                                            android:layout_height="@dimen/_20sdp"
+                                            android:layout_gravity="center"
+                                            android:src="@mipmap/ic_launcher_round" />
+
+                                        <TextView
+                                            android:id="@+id/inning1SessionTeamName"
+                                            style="@style/font_bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="@dimen/_10sdp"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp"
+                                            tools:text="Ind - 1nd Inn" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/session1stUpDown"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_up"
+                                        app:tint="@color/txt_color" />
+
+                                </RelativeLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/linear1stSession"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+                                    <include
+                                        layout="@layout/item_divider"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="5dp"
+                                        tools:ignore="IncludeLayoutParam" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_margin="@dimen/_5sdp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+                                            android:text="Session:"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:text="Open"
+                                            android:visibility="gone"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:text="Min"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:text="Max"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:text="Pass"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:text="Wkt"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            style="@style/font_bold"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+                                            android:gravity="center_horizontal"
+                                            android:text="Odds"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/recyclerSessionInning1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        tools:itemCount="2"
+                                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                        tools:listitem="@layout/item_session_live_layout" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!--                projected score area-->
+                    <LinearLayout
+                        android:id="@+id/layout_livepage_projected_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textview_projected"
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Projected score"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                style="@style/font_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:text="As Per RR"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="5dp"
+                            android:background="@color/card_view_white"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:paddingVertical="7dp"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:id="@+id/relative_livepage_projected"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:paddingHorizontal="5dp">
+
+                                <TextView
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Over"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="12sp" />
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true">
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_rateA1"
+                                        style="@style/font_medium"
+                                        android:layout_width="40dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:text="crr"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_rateA2"
+                                        style="@style/font_regular"
+                                        android:layout_width="40dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_rateA1"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_rateA3"
+                                        style="@style/font_regular"
+                                        android:layout_width="40dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_rateA2"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_rateA4"
+                                        style="@style/font_regular"
+                                        android:layout_width="40dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_rateA3"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_rateA5"
+                                        style="@style/font_regular"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_rateA4"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:visibility="gone"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+
+                            <include
+                                android:id="@+id/include_divider4"
+                                layout="@layout/item_divider"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:visibility="gone"
+                                android:layout_below="@id/relative_livepage_projected"
+                                android:layout_marginVertical="4dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerProjected"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/relative_livepage_projected"
+                                tools:listitem="@layout/item_projected_score"
+                                tools:itemCount="2"
+                                android:orientation="vertical"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                            <RelativeLayout
+                                android:id="@+id/relative_livepage_projected2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_below="@+id/include_divider4"
+                                android:layout_marginBottom="4dp"
+                                android:paddingHorizontal="5dp"
+                                android:paddingVertical="3dp">
+
+                                <TextView
+                                    android:id="@+id/textview_projected_scoreA1_over"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="12sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreA1"
+                                        style="@style/font_medium"
+                                        android:layout_width="40dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreA2"
+                                        style="@style/font_regular"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_scoreA1"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreA3"
+                                        style="@style/font_regular"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_scoreA2"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreA4"
+                                        style="@style/font_regular"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_scoreA3"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreA5"
+                                        style="@style/font_regular"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_scoreA4"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/relative_livepage_projected3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/relative_livepage_projected2"
+                                android:layout_marginBottom="4dp"
+                                android:visibility="gone"
+                                android:paddingHorizontal="5dp"
+                                android:paddingVertical="3dp">
+
+                                <TextView
+                                    android:id="@+id/textview_projected_scorB1_over"
+                                    style="@style/font_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="12sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreB1"
+                                        style="@style/font_medium"
+                                        android:layout_width="40dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreB2"
+                                        style="@style/font_regular"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_scoreB1"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreB3"
+                                        style="@style/font_regular"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_scoreB2"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreB4"
+                                        style="@style/font_regular"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_scoreB3"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_projected_scoreB5"
+                                        style="@style/font_regular"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/textview_projected_scoreB4"
+                                        android:gravity="center_horizontal"
+                                        android:text="-"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linerlayout_drs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:background="@drawable/shape_rectangle"
+                        android:backgroundTint="@color/card_view_white"
+                        android:elevation="@dimen/_5sdp"
+                        android:foregroundGravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="5dp"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            style="@style/font_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:paddingLeft="8dp"
+                            android:text="Decision Review System (DRS)"
+                            android:textColor="@color/txt_color"
+                            android:textSize="12sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_toLeftOf="@id/viewdrs"
+                                android:orientation="horizontal"
+                                android:paddingVertical="2dp">
+
+                                <LinearLayout
+                                    android:id="@+id/linearDrsFirst"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/drsImgA"
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        tools:src="@mipmap/ic_launcher_round" />
+
+
+                                    <TextView
+                                        android:id="@+id/drsTeamA"
+                                        style="@style/font_bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="IND"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/linearDrsFirst"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Left: "
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Pass: "
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Fail: "
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/drsRemainTeamA"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            tools:text="2"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            android:id="@+id/drsPassTeamA"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            tools:text="2"
+                                            android:textColor="@color/green"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            android:id="@+id/drsFailTeamA"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            tools:text="2"
+                                            android:textColor="@color/red"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:id="@+id/viewdrs"
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/viewdrs"
+                                android:orientation="horizontal"
+                                android:paddingVertical="2dp">
+
+                                <LinearLayout
+                                    android:id="@+id/linearDrsSecond"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/drsImgB"
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        tools:src="@mipmap/ic_launcher_round" />
+
+
+                                    <TextView
+                                        android:id="@+id/drsTeamB"
+                                        style="@style/font_bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="AUS"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/linearDrsSecond"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Left: "
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Pass: "
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Fail: "
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/drsRemainTeamB"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            tools:text="2"
+                                            android:textColor="@color/txt_color"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            android:id="@+id/drsPassTeamB"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            tools:text="2"
+                                            android:textColor="@color/green"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            android:id="@+id/drsFailTeamB"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            tools:text="2"
+                                            android:textColor="@color/red"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linerlayout_dls"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:background="@drawable/shape_rectangle"
+                        android:backgroundTint="@color/card_view_white"
+                        android:elevation="@dimen/_5sdp"
+                        android:foregroundGravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="5dp"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            style="@style/font_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:paddingLeft="8dp"
+                            android:text="Duckworth-Lewis-Stern (DLS)"
+                            android:textColor="@color/txt_color"
+                            android:textSize="12sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_toLeftOf="@id/viewdls"
+                                android:orientation="horizontal"
+                                android:paddingVertical="2dp">
+
+                                <LinearLayout
+                                    android:id="@+id/linearDlsFirst"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/dlsImgA"
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        tools:src="@mipmap/ic_launcher_round" />
+
+
+                                    <TextView
+                                        android:id="@+id/dlsTeamA"
+                                        style="@style/font_bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="IND"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/dlsTeamAScore"
+                                    style="@style/font_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_toRightOf="@id/linearDlsFirst"
+                                    android:text="246-10 (48.5)"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="@dimen/_10sdp" />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:id="@+id/viewdls"
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@color/gray_view" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/viewdls"
+                                android:orientation="horizontal"
+                                android:paddingVertical="2dp">
+
+                                <LinearLayout
+                                    android:id="@+id/linearDlsSecond"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/dlsImgB"
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        tools:src="@mipmap/ic_launcher_round" />
+
+
+                                    <TextView
+                                        android:id="@+id/dlsTeamB"
+                                        style="@style/font_bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="AUS"
+                                        android:textColor="@color/txt_color"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/dlsTeamBScore"
+                                    style="@style/font_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_toRightOf="@id/linearDlsSecond"
+                                    android:text="183 (28)"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="@dimen/_10sdp" />
+
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/dlsRequire"
+                            style="@style/font_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:paddingLeft="8dp"
+                            android:text="Team India need 183 in 28 Overs to win this match"
+                            android:textColor="@color/txt_color"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <!--                voice settings Langauges male or female-->
+                    <LinearLayout
+                        android:id="@+id/linerlayout_voice_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:background="@color/card_view_white"
+                        android:foregroundGravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="5dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_voice_settings1"
+                            style="@style/font_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:paddingLeft="8dp"
+                            android:text="Choose Voice Langauges : "
+                            android:textColor="@color/txt_lgt"
+                            android:textSize="11sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal"
+                                android:paddingVertical="2dp">
+
+
+                                <HorizontalScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scrollbars="none">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <Button
+                                            android:id="@+id/btn_audio_hindi"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp"
+                                            android:layout_marginHorizontal="5dp"
+                                            android:layout_marginBottom="2dp"
+                                            android:background="@drawable/shape_rectangle2"
+                                            android:backgroundTint="@color/yellow_lgt"
+                                            android:paddingHorizontal="4dp"
+                                            android:paddingVertical="0dp"
+                                            android:text="Hindi"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white"
+                                            android:textSize="11sp" />
+
+                                        <Button
+                                            android:id="@+id/btn_audio_eng"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp"
+                                            android:layout_marginHorizontal="5dp"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_toRightOf="@+id/btn_scoreboard_inings1"
+                                            android:background="@drawable/shape_rectangle2"
+                                            android:backgroundTint="@color/colorAccent"
+                                            android:paddingHorizontal="4dp"
+                                            android:paddingVertical="0dp"
+                                            android:text="English"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white"
+                                            android:textSize="11sp" />
+
+                                        <Button
+                                            android:id="@+id/btn_audio_bangla"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp"
+                                            android:layout_marginHorizontal="5dp"
+                                            android:layout_marginRight="4dp"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_toRightOf="@+id/btn_scoreboard_inings2"
+                                            android:background="@drawable/shape_rectangle2"
+                                            android:backgroundTint="@color/scrbordbtn_deact_back"
+                                            android:paddingHorizontal="4dp"
+                                            android:paddingVertical="0dp"
+                                            android:text="Bangla"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/scrbordbtn_deact_text"
+                                            android:textSize="11sp"
+                                            android:visibility="gone" />
+
+                                        <Button
+                                            android:id="@+id/btn_audio_telugu"
+                                            style="@style/font_regular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp"
+                                            android:layout_marginRight="4dp"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_toRightOf="@+id/btn_scoreboard_inings3"
+                                            android:background="@drawable/shape_rectangle2"
+                                            android:backgroundTint="@color/scrbordbtn_deact_back"
+                                            android:paddingVertical="0dp"
+                                            android:text="Telugu"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/scrbordbtn_deact_text"
+                                            android:textSize="11sp"
+                                            android:visibility="gone" />
+
+                                    </LinearLayout>
+                                </HorizontalScrollView>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sessionLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:background="@drawable/shape_rectangle"
+                        android:backgroundTint="@color/card_view_white"
+                        android:elevation="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="5dp"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <TextView
+                                style="@style/font_semibold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Session Summry :"
+                                android:textColor="@color/txt_color"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <TextView
+                                android:id="@+id/session"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:textColor="@color/txt_color" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_if_live_not_show_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/stopwatch"
+                app:tint="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/matchText"
+                    style="@style/font_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Match has not started yet."
+                    android:textColor="@color/gray_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_livescorepage_upcomingdateshow"
+                    style="@style/font_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/matchText"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/progress_layout"
+            layout="@layout/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

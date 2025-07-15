@@ -1,0 +1,263 @@
+<resources>
+    <string name="app_name">Cricbuzz Plus Live</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_experts">Experts</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_prediction">Prediction</string>
+    <string name="title_more">More</string>
+    <string name="title_series">Series</string>
+    <string name="title_fixtures">Fixtures</string>
+    <string name="title_upcoming">Upcoming</string>
+    <string name="title_finished">Finished</string>
+    <string name="title_result">Result</string>
+    <string name="title_recent">Recent</string>
+
+
+    <string name="title_news">News</string>
+    <string name="title_matches">MATCHES</string>
+    <string name="title_match">Matches</string>
+    <string name="title_live">Live</string>
+    <string name="title_polls">POLLS</string>
+    <string name="title_video">Video</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="retry">Retry</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Loading">Loading</string>
+
+    <string name="point_table">TABLE</string>
+    <string name="fantasy">FANTASY</string>
+    <string name="schedule">SCHEDULE</string>
+    <string name="feature_video">FEATURED VIDEOS</string>
+    <string name="top_stories">TOP STORIES</string>
+    <string name="trending_video">TRENDING</string>
+
+
+    <!-- ////////////////// live/////////////-->
+
+    <string name="live_info">INFO</string>
+    <string name="live_live">LIVE</string>
+    <string name="live_liveline">LIVE LINE</string>
+    <string name="live_tips">TIPS</string>
+    <string name="live_scorecard">SCORECARD</string>
+    <string name="live_squad">SQUAD</string>
+    <string name="live_over">OVER</string>
+    <string name="live_highlight">HIGHLIGHT</string>
+    <string name="live_commentary">COMMENTARY</string>
+    <string name="live_highlights">HIGHLIGHTS</string>
+    <string name="live_odds">ODDS</string>
+    <string name="live_chats">CHAT</string>
+    <string name="live_graph">GRAPH</string>
+    <string name="live_lastwicket">Last Wkt</string>
+    <string name="live_partnership">Partnership:</string>
+
+    <string name="live_comentary_all">All</string>
+    <string name="live_comentary_overs">Overs</string>
+    <string name="live_comentary_firstinning">First inning</string>
+    <string name="live_comentary_secondinning">Second inning</string>
+    <string name="live_comentary_thirdinning">Third inning</string>
+    <string name="live_comentary_fourthinning">Fourth inning</string>
+    <string name="live_comentary_4">4</string>
+    <string name="live_comentary_6">6</string>
+    <string name="live_comentary_w">W</string>
+
+    <string name="live_info_last5matches">Team Form</string>
+    <string name="live_info_teamtoss">Teams Toss Compare</string>
+    <string name="live_info_teamcompare">Team Compare</string>
+    <string name="live_info_vs_allteams">vs all teams</string>
+    <string name="live_info_matchplayed">Matches Played</string>
+    <string name="live_info_winpercentage">Win</string>
+    <string name="live_info_average">Average Score</string>
+    <string name="live_info_highest">Highest Score</string>
+    <string name="live_info_lowest">Lowest Score</string>
+    <string name="live_info_venue_guide">VENUE GUIDE</string>
+    <string name="live_info_head_to_head">Head To Head</string>
+    <string name="live_info_tv_guide">TV GUIDE - </string>
+
+    <string name="live_graph_worm">Worm Graph</string>
+    <string name="live_graph_manhattan">Manhattan Graph</string>
+    <string name="live_graph_odds">Odds Graph</string>
+
+
+    <string name="fixture_upcoming">Upcoming Matches</string>
+    <string name="fixture_recent">Recent Matches</string>
+    <string name="fixture_filter_all">All</string>
+    <string name="fixture_filter_t20">T20\'s</string>
+    <string name="fixture_filter_odi">ODI\'s</string>
+    <string name="fixture_filter_test">Test</string>
+
+
+    <!-- ////////////////// ranking/////////////-->
+
+    <string name="ranking_batting">BATTERS</string>
+    <string name="ranking_bowling">BOWLERS</string>
+    <string name="ranking_allrounder">ALL ROUNDERS</string>
+    <string name="ranking_team">TEAMS</string>
+
+    <string name="icc_women_s_ranking">ICC Women\'s Ranking</string>
+    <string name="icc_mens_ranking">ICC Men\'s Ranking</string>
+    <string name="icc_records">Records</string>
+
+    <!-- ////////////////// info /////////////-->
+
+    <string name="info_match">Match</string>
+    <string name="info_series">Series</string>
+    <string name="info_date">Date</string>
+    <string name="info_time">Time</string>
+    <string name="info_toss">Toss</string>
+    <string name="info_venue">Venue</string>
+    <string name="info_umpire">Umpires</string>
+    <string name="info_third_umpire">Third Umpire</string>
+    <string name="info_referee">Referee</string>
+
+
+    <!-- ////////////////// scoreboard /////////////-->
+
+    <string name="score_extra">Extras</string>
+    <string name="score_total">Total</string>
+
+    <!-- ////////////////// player /////////////-->
+    <string name="player_info">INFO</string>
+    <string name="player_batting">BATTING</string>
+    <string name="player_bowling">BOWLING</string>
+    <string name="player_career">CAREER</string>
+    <string name="player_news">NEWS</string>
+
+
+    <!-- ////////////////// team /////////////-->
+    <string name="team_schedule">SCHEDULE</string>
+    <string name="team_result">RESULT</string>
+    <string name="team_news">NEWS</string>
+    <string name="team_players">PLAYERS</string>
+    <string name="team_stats">STATS</string>
+
+
+    <!-- ////////////////// stadium /////////////-->
+    <string name="stadium_info">INFO</string>
+    <string name="stadium_matches">MATCHES</string>
+    <string name="stadium_stats">STATS</string>
+
+
+    <!-- ////////////////// Experts /////////////-->
+
+    <string name="experts_match">Match Experts</string>
+    <string name="experts_toss">Toss Experts</string>
+    <string name="experts_top">Top Experts</string>
+    <string name="experts_all">All Experts</string>
+
+
+    <string name="user_match_prediction">Match Predict</string>
+    <string name="user_toss_prediction">Toss Predict</string>
+    <string name="user_leaderboard">Leaderboard</string>
+
+
+    <string name="rupee">\u20B9</string>
+
+
+    <string name="no_internet">No Internet. Please check your connection.</string>
+    <string name="timeout_error">Request taking too much time to process. Please try after some time.</string>
+    <string name="undefined_error">Server is not responding. Please try after some time.</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="are_you_sure_to_logout">Are you sure to logout ?</string>
+
+    <string name="signin_key">333622190748-rlqt1uko70g31873p8l572blaair5etk.apps.googleusercontent.com</string>
+    <string name="client_secret">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</string>
+
+    <!--    series-->
+
+    <string name="browse_series">Browse Series</string>
+    <string name="series_international">INTERNATIONAL</string>
+    <string name="series_t20leagues">T20LEAGUES</string>
+    <string name="series_domestic">DOMESTIC</string>
+    <string name="series_women">WOMEN</string>
+    <string name="series_matches">MATCHES</string>
+    <string name="series_table">TABLE</string>
+    <string name="series_squad">SQUADS</string>
+    <string name="series_stats">STATS</string>
+    <string name="series_vanues">VENUES</string>
+    <string name="series_news">NEWS</string>
+
+    <string name="browse_player">Browse Player</string>
+    <string name="photo">Photo Galleries</string>
+
+
+    <!--    live id-->
+
+
+    <!--<string name="testaddId">ca-app-pub-6694413435909850/1931271995</string>
+    <string name="testappId">ca-app-pub-6694413435909850~9410306769</string>
+    <string name="testInterstitialId">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <string name="facebook_app_id">1682335638862239</string>
+    <string name="fb_login_protocol_scheme">fb1682335638862239</string>
+    <string name="facebook_client_token">aa059d9e4d04d76fb5e780cf9f62f6fb</string>
+
+
+    <string name="phone">9057999900</string>
+    <string name="whatsapp">9057999900</string>
+    <string name="telegramlink">https://t.me/heroliveline</string>
+
+
+    <!--    //test id-->
+    <string name="addId">ca-app-pub-1550385658631591/2287424479</string>
+    <string name="appId">ca-app-pub-1550385658631591~1214053948</string>
+    <string name="interstitialId">ca-app-pub-1550385658631591/6391440571</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_brows_player">BrowsPlayerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="browse_teams">Browse Teams</string>
+    <string name="archives">Archives</string>
+    <string name="photos">Photos</string>
+    <string name="wtc">ICC World Test Championship</string>
+    <string name="super_league">ICC World Cup Super League</string>
+    <string name="quotes">Quotes</string>
+    <string name="settings">Settings</string>
+    <string name="matches">MATCHES</string>
+    <string name="fall_of_wickets">Fall Of Wickets</string>
+    <string name="weather_into">Weather Into</string>
+    <string name="schedules">Schedules</string>
+
+    <string name="refer">🌟 Introducing Our Refer &amp; Earn Program! 🌟\n\n
+
+Cricbuzz Plus Live Line Want to spread the word and earn rewards at the same time? Our Refer &amp; Earn program is here to make that happen! Invite your friends, family, and colleagues to join the Hero Live Line family, and both you and your referrals can enjoy exclusive benefits.\n\n
+
+How It Works:\n\n
+
+🔗 Refer, Share, Earn! 🔗\n\n
+
+1. Refer: Share your unique referral link with friends and family. You can find this link in your application more features.\n\n
+
+2. Share: Once Your friends click on the link shared by you and install the application.\n\n
+
+3. Earn: When your referrals/Friend make a signup using your link, you earn 20 Point in rewards! The more referrals who install &amp; signup, the more you earn. \n\n
+
+Terms and Conditions:\n\n
+
+📜 Important Details 📜\n\n
+
+Rewards will be credited once the referred signup is confirmed.\n
+
+Referral rewards can be redeemed as cash.\n
+
+Reward amount withdraw minimum 1000/- INR.\n
+
+Referrals must be new customers who have not previously made a signup with us.\n
+
+Cricbuzz Plus Live Line reserves the right to modify or terminate the program at any time.
+
+</string>
+
+
+</resources>

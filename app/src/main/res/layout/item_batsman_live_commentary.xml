@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="ItemBatsmanLiveCricCommentaryBinding">
+
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_3sdp"
+    android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/batsmanName"
+            android:textSize="14sp"
+            android:text="--"
+            tools:text="Pathum nikshanka *"
+            style="@style/font_regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/gray_scrbordbtn_act"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/batsmanRuns"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="24"
+                style="@style/font_regular"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/txt_color" />
+
+            <TextView
+                android:id="@+id/batsmanBalls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                tools:text="20"
+                style="@style/font_regular"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/txt_lgt" />
+
+            <TextView
+                android:id="@+id/batsmanFours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                tools:text="3"
+                style="@style/font_regular"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/txt_lgt" />
+
+            <TextView
+                android:id="@+id/batsmanSix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                tools:text="4"
+                style="@style/font_regular"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/txt_lgt" />
+
+            <TextView
+                android:id="@+id/batsmanStrikeRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="13sp"
+                tools:text="107.56"
+                style="@style/font_regular"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/txt_lgt" />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+</layout>

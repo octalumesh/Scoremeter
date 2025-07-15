@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItemSeriesListCricbuzzBinding">
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card_view_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/seriesName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:singleLine="true"
+            tools:text="fgfdg"
+            style="@style/font_regular"
+            android:textColor="@color/txt_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/seriesDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:singleLine="true"
+            tools:text="fgfdg"
+            style="@style/font_regular"
+            android:textColor="@color/txt_lgt"
+            android:textSize="14sp" />
+
+
+        <View
+            android:id="@+id/viewse"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color" />
+
+    </LinearLayout>
+
+</layout>

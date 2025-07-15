@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItemHighlightCommentaryCricbuzzBinding">
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/commentryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/card_view_white"
+            style="@style/font_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:textColor="@color/txt_color"
+            android:textSize="14sp"
+            tools:text="fgfdg" />
+
+        <LinearLayout
+            android:id="@+id/oversCommentry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relativeOverComplete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_light"
+                android:visibility="gone"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_4sdp">
+
+
+                <TextView
+                    android:id="@+id/overTitleMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    style="@style/font_regular"
+                    android:textColor="@color/txt_lgt"
+                    android:textSize="13sp"
+                    tools:text="End  Of Over 20" />
+
+                <TextView
+                    android:id="@+id/overTitleRun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/overTitleMain"
+                    style="@style/font_medium"
+                    android:textColor="@color/txt_lgt"
+                    android:textSize="14sp"
+                    tools:text="19 Run" />
+
+
+                <View
+                    android:id="@+id/xyz_bottomborder_commentry"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_below="@+id/overTitleRun"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xyz_bottomborder_commentry"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linearScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/overTitleTeam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/font_medium"
+                            android:textColor="@color/txt_lgt"
+                            android:textSize="12sp"
+                            tools:text="Super Kings" />
+
+                        <TextView
+                            android:id="@+id/overTitleScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/font_medium"
+                            android:textColor="@color/txt_lgt"
+                            android:textSize="14sp"
+                            tools:text="150/3" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/overScoreCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/linearScore"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/overBatsmens"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/overPlayer1Name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_toLeftOf="@id/overPlayer1Score"
+                                    style="@style/font_regular"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp"
+                                    tools:text="virat " />
+
+                                <TextView
+                                    android:id="@+id/overPlayer1Score"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    style="@style/font_regular"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp"
+                                    tools:text="25(13)" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp">
+
+                                <TextView
+                                    android:id="@+id/overPlayer2Name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_toLeftOf="@id/overPlayer2Score"
+                                    style="@style/font_regular"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp"
+                                    tools:text="rohit " />
+
+                                <TextView
+                                    android:id="@+id/overPlayer2Score"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    style="@style/font_regular"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp"
+                                    tools:text="45(23)" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp">
+
+                                <TextView
+                                    android:id="@+id/overBolwerName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_toLeftOf="@id/overBolwerState"
+                                    style="@style/font_regular"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp"
+                                    tools:text="mustafizur rheman " />
+
+                                <TextView
+                                    android:id="@+id/overBolwerState"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_alignParentEnd="true"
+                                    style="@style/font_regular"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/txt_lgt"
+                                    android:textSize="12sp"
+                                    tools:text="4-0-28-3" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/overDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_view_white"
+                android:elevation="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_7sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/linearOver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/commentaryOver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        style="@style/font_medium"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/txt_color"
+                        tools:text="19.3" />
+
+                    <TextView
+                        android:id="@+id/tv_over_run_commentry"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:background="@drawable/cricle_shape_round"
+                        style="@style/font_bold"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/overDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/linearOver"
+                    style="@style/font_regular"
+                    android:textColor="@color/txt_color"
+                    android:textSize="14sp"
+                    tools:text="flick to the leg side for 3 runs" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_light"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

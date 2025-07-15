@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#05AC82</color>
+    <color name="colorPrimaryDark">#00946E</color>
+    <color name="colorAccent">#05AC82</color>
+
+    <color name="start_color">#060606</color>
+    <color name="mid_color">#514E4E</color>
+    <color name="end_color">#000000</color>
+
+    <!--<color name="bg_color">#F5F5F5</color>-->
+    <!--<color name="bg_color">#ECEDEE</color>-->
+    <color name="bg_color">#EBF1F1</color>
+    <color name="green_table">#D4F1EC</color>
+    <color name="green_tablenew">#EDDEF3EF</color>
+
+    <color name="txt_title">#05AC82</color>
+    <color name="txt_color">#000</color>
+    <color name="txt_lgt">#757575</color>
+    <color name="gray_view">#BDBDBD</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tab_unselected">#96F2E3</color>
+    <color name="white_lgt">#EAE7E7</color>
+    <color name="blue">#01527B</color>
+    <color name="blue_dark">#010DFD</color>
+    <color name="player_color">#1166C7</color>
+
+    <color name="yellow_lite">#05AC82</color>
+    <color name="dark_black">#020202</color>
+    <color name="dark_black_only">#020202</color>
+    <color name="darkstatusbar_teamname">#143D6E</color>
+    <color name="gray_scrbordbtn_act">#3B6DA8</color>
+    <color name="scrbordbtn_act_main">#3B6DA8</color>
+    <color name="scrbordbtn_deact_text">#212121</color>
+    <color name="scrbordbtn_deact_back">#EDEDED</color>
+    <color name="winner_cardview_back">#FFFFFF</color>
+    <color name="button_red_lgt_back">#22F3AAA4</color>
+    <color name="card_view_white">#FFFFFF</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="verified">#00CD2D</color>
+    <color name="verified_color">#E1FDE9</color>
+    <color name="tab_gray_lgt">#B9CEE8</color>
+    <color name="gray_lgt">#B9CEE8</color>
+
+    <color name="six">#DC84EC</color>
+    <color name="four">#35B3EC</color>
+    <color name="wicket">#EC3535</color>
+    <color name="extra">#C6A666</color>
+    <color name="runs">#45BC7A</color>
+    <!--<color name="darkstatusbar">#143D6E</color>-->
+    <!--<color name="darkstatusbar">#1D2334</color>-->
+    <color name="darkstatusbar">#143D6E</color>
+    <color name="darkstatusbar1">#F5F5F5</color>
+    <color name="green_light">#8F97EF9B</color>
+
+    <color name="tabcolor">#ff572a</color>
+    <color name="bottom_nav_active">#143D6E</color>
+    <color name="bottom_nav_inactive">#8F9091</color>
+    <color name="card_view_background">#FFFFFF</color>
+
+    <color name="text_normal_analysis">#085D95</color>
+    <color name="text_normal_analysis2">#E9F450</color>
+
+    <color name="red_lgt_odds">#22F3AAA4</color>
+    <color name="red_lgt_odds2">#951308</color>
+    <color name="green_lgt_odds">#1EBEE2F6</color>
+    <color name="green_lgt_odds2">#0D5391</color>
+    <color name="green1_lgt_odds">#1ECAF6BE</color>
+    <color name="green1_lgt_odds2">#23780B</color>
+    <color name="odds_left_back">#01527B</color>
+    <color name="odds_right_back">#A70000</color>
+    <color name="yesno_left_back">#1EBEE2F6</color>
+    <color name="yesno_right_back">#22F3AAA4</color>
+    <color name="yesno_left_text">#0B4578</color>
+    <color name="yesno_right_text">#951308</color>
+    <color name="pin_yesno_left_back">#009688</color>
+    <color name="pin_yesno_right_back">#951308</color>
+
+    <color name="divider1">#E1E1E1</color>
+    <color name="divider_light">#5B2F69AF</color>
+    <color name="red_lgt_result">#9C6C1818</color>
+    <color name="green_predict">#E23E8B1F</color>
+    <color name="red_predct">#E9D11010</color>
+    <color name="red_mild_scoreboard">#6C1818</color>
+    <color name="side_divider1">#E1E1E1</color>
+    <color name="side_divider2">#5B2F69AF</color>
+    <color name="side_divider3">#EDEEEF</color>
+
+    <color name="squad_name_text">#143D6E</color>
+    <color name="squad_team">#FFFFFF</color>
+
+    <color name="darkRed">#522157</color>
+    <color name="lightRed">#8b4c70</color>
+    <color name="mintRed">#BF81A5</color>
+    <color name="lightRed2">#632A68</color>
+
+    <color name="limeGreen">#51B12B</color>
+    <color name="green">#00A426</color>
+    <color name="red">#D50000</color>
+    <color name="orange">#F45E0C</color>
+    <color name="bluene">#1A6990</color>
+    <color name="bluene1">#1A6990</color>
+    <color name="red_mild">#A70000</color>
+    <color name="gray">#8F9091</color>
+    <color name="graynew">#B3B3B3</color>
+    <color name="gray_dark">#6D6A6A</color>
+    <color name="gray_light">#EBF1F1</color>
+    <color name="gray_light2">#DDDDDD</color>
+    <color name="bg_light">#DFDFDF</color>
+    <color name="gray_seriesname">#787878</color>
+    <color name="gray_ball">#9C9B9B</color>
+    <color name="gray_main">#E1E1E1</color>
+    <color name="lastball_background">#F6F5F5</color>
+    <color name="odds_max">#8BC1EB</color>
+    <color name="odds_min">#F1A1B3</color>
+
+
+    <color name="gray_scoreboard_btn">#EDEDED</color>
+    <color name="sky">#97AABD</color>
+    <color name="blue_aqva">#0E62C6</color>
+    <color name="gray_backgrounds">#F6F5F5</color>
+    <color name="gray_backgrounds2">#F8F7F7</color>
+    <!--    <color name="gray_backgrounds">#ECEBEB</color>-->
+    <color name="winner_red_lgt_back">#3BF63636</color>
+
+    <color name="exchange_backgrounds">#f5f5f5</color>
+    <color name="exchange_theme">#172f47</color>
+    <color name="inactive_button">#286AB8</color>
+
+    <color name="txt_kabutar">#3fc1c9</color>
+    <color name="red_middle">#FC5185</color>
+    <color name="yelow_mild">#F4A950</color>
+    <color name="tab_indicate_yelow_mild">#FFFFFF</color>
+    <color name="lignt_kabu">#50F4F4</color>
+    <color name="yelow_mild2">#DBF5AE</color>
+
+    /////light color theme//////////////
+    <color name="white_lgt_trans">#60FCFDFD</color>
+
+    <color name="gray_lgt_navbar">#93B3DA</color>
+    <color name="gray_lgt2">#D3D4D5</color>
+    <color name="gray_txt">#828283</color>
+    <color name="sky_lgt">#87BEFF</color>
+    <color name="green_lgt">#90FFBE</color>
+    <color name="yellow_lgt">#05AC82</color>
+    <color name="pink_lgt">#FB5BA3</color>
+
+    <color name="red_lgt_bt">#88FB0000</color>
+    <color name="red_table">#85F5A3A3</color>
+    <color name="green_lgt_bt">#8829A12F</color>
+
+
+</resources>

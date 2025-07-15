@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItemPointTableCricBinding">
+
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/card_view_white"
+            android:padding="@dimen/_7sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/teamImg"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/virat"/>
+
+                <TextView
+                    android:id="@+id/team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IND"
+                    style="@style/font_regular"
+                    android:textColor="@color/blue_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/matchPlayed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
+                    style="@style/font_regular"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/matchWin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
+                    style="@style/font_regular"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/matchLost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
+                    style="@style/font_regular"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/matchNoResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
+                    style="@style/font_regular"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/matchPoints"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="center"
+                    android:text="4"
+                    android:textAlignment="center"
+                    android:textColor="@color/txt_color"
+                    style="@style/font_regular"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/matchNetRR"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center|end"
+                    android:layout_gravity="center"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:drawableTint="@color/txt_lgt"
+                    android:text="+1.958"
+                    android:textColor="@color/gray"
+                    style="@style/font_regular"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</layout>

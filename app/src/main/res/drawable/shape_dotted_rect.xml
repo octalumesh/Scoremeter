@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape with rounded corners -->
+    <item android:id="@+id/listview_background_shape">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_5sdp" />
+        </shape>
+    </item>
+
+    <!-- Dotted border -->
+    <item
+        android:left="@dimen/_1sdp"
+        android:right="@dimen/_1sdp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/_1sdp"
+                android:color="@color/gray"
+                android:dashWidth="@dimen/_4sdp"
+                android:dashGap="@dimen/_2sdp" />
+            <corners android:radius="@dimen/_5sdp" />
+        </shape>
+    </item>
+</layer-list>

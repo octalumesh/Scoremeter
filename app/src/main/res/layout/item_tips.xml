@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data
+        class="ItemTipsBinding">
+
+    </data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rectangle"
+    android:backgroundTint="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titlePrediction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="jhjhdihfidhfihdifuhiuhfiuhf"
+        android:textSize="17sp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/titleMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="jhjhdihfidhfihdifuhiuhfiuhf"
+        android:textSize="16sp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/datePrediction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Date : 21 - 2 - 2022"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_gravity="end"
+        android:paddingRight="@dimen/_5sdp"/>
+
+
+</LinearLayout>
+</layout>

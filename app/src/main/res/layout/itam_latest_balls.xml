@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_lastball_cycle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        style="@style/font_bold"
+        android:textSize="10sp"
+        android:text="-"
+        android:textColor="@color/dark_black"
+        android:background="@drawable/cricle_shape_round"
+        android:backgroundTint="@color/tab_gray_lgt"/>
+
+
+
+    <View
+        android:id="@+id/lastball_divider"
+        android:visibility="gone"
+        android:layout_height="20dp"
+        android:layout_width="1dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_lastball_cycle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/side_divider1" />
+
+
+
+
+
+</RelativeLayout>

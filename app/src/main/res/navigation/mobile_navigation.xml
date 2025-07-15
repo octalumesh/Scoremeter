@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/redirect_news_details"
+            app:destination="@id/navigation_newsDetails">
+            <argument
+                android:name="newsId"
+                app:argType="integer" />
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_homelist"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.HomeMainFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/home_main_fragment">
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_experts"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.experts.ExpertsFragment"
+        android:label="@string/title_experts"
+        tools:layout="@layout/fragment_experts" />
+
+    <fragment
+        android:id="@+id/navigation_polls"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.PollsFragment"
+        android:label="@string/title_polls"
+        tools:layout="@layout/fragment_polls" />
+
+    <fragment
+        android:id="@+id/navigation_video"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.VideoFragment"
+        android:label="@string/title_video"
+        tools:layout="@layout/fragment_video" />
+
+
+    <fragment
+        android:id="@+id/navigation_prediction"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.PredictionFragment"
+        android:label="@string/title_prediction"
+        tools:layout="@layout/prediction_fragment" />
+
+
+    <fragment
+        android:id="@+id/navigation_series"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.SeriesFragment"
+        android:label="@string/title_series"
+        tools:layout="@layout/series_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_matches"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.MatchesFragment"
+        android:label="@string/title_matches"
+        tools:layout="@layout/fragment_matches" />
+
+    <fragment
+        android:id="@+id/navigation_fixtures"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.FixturesFragment"
+        android:label="@string/title_fixtures"
+        tools:layout="@layout/fixtures_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.MoreFragment"
+        android:label="@string/title_more"
+        tools:layout="@layout/more_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_recent"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.RecentMatchesFragment"
+        android:label="@string/title_recent"
+        tools:layout="@layout/recent_matches_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.InfoFragment"
+        tools:layout="@layout/info_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_live"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.LiveFragment"
+        tools:layout="@layout/live_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_liveline"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.LiveLineNewFragment"
+        tools:layout="@layout/live_line_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_upcoming"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.UpcomingFragment"
+        tools:layout="@layout/upcoming_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_scoreboard"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.ScoreboardFragment"
+        tools:layout="@layout/scoreboard_fragment" />
+
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news">
+
+        <!-- <action android:id="@+id/redirect_news_details"
+             app:destination="@id/navigation_newsDetails">
+             <argument android:name="newsId" app:argType="integer"/>
+
+         </action>-->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_newsDetails"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.news.NewsDetailFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news_detail" />
+
+
+    <fragment
+        android:id="@+id/navigation_team_type"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.TeamTypeFragment"
+        tools:layout="@layout/fragment_team_type">
+
+        <action
+            android:id="@+id/redirect_team_ranking"
+            app:destination="@id/navigation_team_ranking">
+            <argument
+                android:name="type"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_team_ranking"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.TeamRankingFragment"
+        tools:layout="@layout/fragment_team_ranking" />
+
+    <fragment
+        android:id="@+id/navigation_player_type"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.PlayerRankingTypeFragment"
+        tools:layout="@layout/fragment_player_ranking_type">
+
+        <action
+            android:id="@+id/redirect_player_ranking"
+            app:destination="@id/navigation_player_ranking">
+            <argument
+                android:name="type"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_player_ranking"
+        android:name="com.cricbuzzplus.liveline.livedata.ui.fragment.PlayerRankingFragment"
+        tools:layout="@layout/fragment_player_ranking" />
+
+</navigation>

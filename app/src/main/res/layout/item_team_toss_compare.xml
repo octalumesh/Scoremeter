@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data
+        class="ItemTeamTossCompareBinding">
+
+    </data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/teamForm"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@drawable/cricle_shape_round"
+        android:backgroundTint="@color/limeGreen"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="W"
+        android:layout_margin="@dimen/_3sdp"
+        android:textColor="@color/text_white"
+        style="@style/font_regular"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+    <data
+        class="ItemScoreBowlerBinding">
+
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_7sdp"
+            android:paddingRight="@dimen/_7sdp">
+
+            <TextView
+                android:id="@+id/bowlerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                tools:text="bowler Name"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/bluene1"
+                style="@style/font_regular"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/over"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="123"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_color"
+                    style="@style/font_regular"/>
+
+                <TextView
+                    android:id="@+id/maiden"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="123"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_color"
+                    style="@style/font_regular"/>
+
+
+                <TextView
+                    android:id="@+id/runs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="44"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_color"
+                    style="@style/font_regular"/>
+
+                <TextView
+                    android:id="@+id/wicket"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="9"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/txt_color"
+                    style="@style/font_medium"/>
+
+                <TextView
+                    android:id="@+id/economy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    tools:text="9.6"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_color"
+                    style="@style/font_regular"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_view"/>
+
+    </LinearLayout>
+
+</layout>

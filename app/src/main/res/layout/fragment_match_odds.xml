@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".livepage.newstructute.MatchOddsFragment">
+
+
+    <LinearLayout
+        android:id="@+id/overLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:paddingVertical="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/btn_scoreboard_inings1"
+                        android:backgroundTint="@color/yellow_lgt"
+                        android:background="@drawable/shape_rectangle"
+                        android:paddingLeft="@dimen/_11sdp"
+                        android:paddingRight="@dimen/_11sdp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/font_regular"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="1st Inns"
+                        />
+
+                    <TextView
+                        android:id="@+id/btn_scoreboard_inings2"
+                        android:backgroundTint="@color/gray_dark"
+                        android:background="@drawable/shape_rectangle"
+                        android:paddingLeft="@dimen/_11sdp"
+                        android:paddingRight="@dimen/_11sdp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:visibility="gone"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/font_regular"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="2nd Inns"
+                        />
+
+                    <TextView
+                        android:id="@+id/btn_scoreboard_inings3"
+                        android:backgroundTint="@color/gray_dark"
+                        android:background="@drawable/shape_rectangle"
+                        android:paddingLeft="@dimen/_11sdp"
+                        android:paddingRight="@dimen/_11sdp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:visibility="gone"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/font_regular"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="3rd Inns"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/btn_scoreboard_inings4"
+                        android:backgroundTint="@color/gray_dark"
+                        android:background="@drawable/shape_rectangle"
+                        android:paddingLeft="@dimen/_11sdp"
+                        android:paddingRight="@dimen/_11sdp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:visibility="gone"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/font_regular"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="4th Inns"
+                        />
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+       <!-- <com.huanhailiuxin.coolviewpager.CoolViewPager
+            android:id="@+id/viewPage"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:cvp_autoscroll="true"
+            android:layout_margin="@dimen/_5sdp"
+            app:cvp_autoscrolldirection="forward"
+            app:cvp_drawedgeeffect="true"
+            app:cvp_edgeeffectcolor="@color/colorPrimary"
+            app:cvp_infiniteloop="true"
+            app:cvp_intervalinmillis="2000"
+            app:cvp_scrollduration="800"
+            app:cvp_scrollmode="horizontal" />-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/overRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:orientation="vertical"
+            app:reverseLayout="true"
+            android:layout_margin="@dimen/_5sdp"
+            tools:listitem="@layout/item_over_data"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerOdds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:reverseLayout="true"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/_50sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_odds_inside"/>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainCard"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_3sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardElevation="@dimen/_1sdp"
+        app:cardBackgroundColor="#3B4076B6"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/firstInning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1ST Inning"
+                    android:textColor="@color/text_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerFirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_odds_inside"/>
+
+
+
+                <TextView
+                    android:id="@+id/secondInning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="2ND Inning"
+                    android:textColor="@color/text_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerSecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_odds_inside"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_odds_not_show"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/stopwatch"
+            app:tint="@color/gray"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/noData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font_regular"
+                android:textSize="15sp"
+                android:textColor="@color/gray_dark"
+                android:text="Odds Data not found."
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".livedata.ui.fragment.cricbuzzfrag.seriesdetail.SeriesStatesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSeries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_squad_cric"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearlayout_if_live_not_show_image"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/ic_undraw_season_calender"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_livescorepage_upcomingdateshow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font_regular"
+                android:textSize="13sp"
+                android:textColor="@color/txt_color"
+                android:text="Come back soon"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_livescorepage_upcomingdateshow"
+                android:layout_toRightOf="@+id/tv_livescorepage_upcomingdateshow1"
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                style="@style/font_regular"
+                android:text=""
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+</layout>

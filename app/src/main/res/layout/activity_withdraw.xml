@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".livedata.ui.activity.wallet.WithdrawActivity">
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_40sdp"
+                style="@style/font_bold"
+                android:text="Withdraw"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/withdrawNow"
+            android:layout_below="@id/rlTop"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/_10sdp"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/iconMoney"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/money_green" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_toRightOf="@id/iconMoney"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/winningText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/font_bold"
+                                android:text="Your Winning Balance"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/totalAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/font_bold"
+                                android:text="\u20B954545"
+                                android:textColor="@color/black"
+                                android:textSize="21sp" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    style="@style/font_bold"
+                    android:text="Withdraw amount"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/withdrawAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rectangle_polls"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:textSize="21sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    style="@style/font_bold"
+                    android:hint="\u20B9 00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_gravity="end"
+                    style="@style/font_bold"
+                    android:text="Min ₹100 &amp; max ₹50,000 allowed per day"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/font_bold"
+                    android:text="Withdraw Methods"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    style="@style/font_regular"
+                    android:text="Use UPI/Bank Transfer when you withdraw more then ₹10,000"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="13sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/upiRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:elevation="@dimen/_20sdp"
+                    android:background="@drawable/shape_rectangle_polls">
+
+
+                    <ImageView
+                        android:id="@+id/upiIcon"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:src="@drawable/upi_icon_new" />
+
+                    <View
+                        android:id="@+id/viewUpi"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@color/gray_dark"
+                        android:layout_toRightOf="@id/upiIcon"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_centerVertical="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_toLeftOf="@id/linearUpiEnd"
+                        android:layout_toRightOf="@id/viewUpi">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Withdraw to UPI"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            style="@style/font_bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/upiId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="----"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            style="@style/font_regular"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearUpiEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/addUpi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+Add UPI"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            style="@style/font_bold"
+                            />
+
+
+                        <RadioButton
+                            android:id="@+id/upiRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:buttonTint="#00CD2D"/>
+
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/bankRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:background="@drawable/shape_rectangle_polls"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/bankIcon"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:src="@drawable/bank_icon_color" />
+
+                    <View
+                        android:id="@+id/viewBank"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@color/gray_dark"
+                        android:layout_toRightOf="@id/bankIcon"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_centerVertical="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_toLeftOf="@id/linearBankEnd"
+                        android:layout_toRightOf="@id/viewBank">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bank Transfer"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            style="@style/font_bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/bankId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="----"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            style="@style/font_regular"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearBankEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/addBank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+Add Bank"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            style="@style/font_bold"
+                            />
+
+
+                        <RadioButton
+                            android:id="@+id/bankRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:buttonTint="#00CD2D"/>
+
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <TextView
+            android:id="@+id/withdrawNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/shape_rectangle_polls"
+            android:backgroundTint="#00CD2D"
+            style="@style/font_bold"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Withdraw Now"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:elevation="@dimen/_20sdp"
+             />
+
+        <include
+            android:id="@+id/progress_layout"
+            layout="@layout/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

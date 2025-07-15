@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPI Address Verification"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="18sp"
+        style="@style/font_bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add UPI Account"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:textSize="14sp"
+        style="@style/font_bold"
+        android:textColor="@color/gray_dark"/>
+
+
+    <EditText
+        android:id="@+id/upiId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_polls"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_dark"
+        style="@style/font_bold"
+        android:hint="Enter your UPI ID ..."/>
+
+
+
+    <TextView
+        android:id="@+id/verifyUpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/shape_rectangle_polls"
+        android:backgroundTint="@color/colorAccent"
+        style="@style/font_bold"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="Verify UPI"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:elevation="@dimen/_20sdp"
+        />
+
+
+</LinearLayout>

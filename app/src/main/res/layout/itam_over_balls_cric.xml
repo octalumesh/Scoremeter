@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data
+        class="ItemOverBallsBinding">
+
+    </data>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_lastball_cycle"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        style="@style/font_regular"
+        android:textSize="11sp"
+        android:text="-"
+        android:textColor="@color/white"
+        android:background="@drawable/cricle_shape_round"
+        android:backgroundTint="@color/gray_ball"/>
+
+
+
+
+</RelativeLayout>
+</layout>

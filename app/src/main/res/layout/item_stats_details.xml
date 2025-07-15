@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data
+        class="ItemStatsDetailsBinding">
+
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+    <LinearLayout
+        android:id="@+id/linearParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card_view_white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            style="@style/font_bold"
+            tools:text="Batting"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/bluene"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/firstValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/font_regular"
+            android:gravity="center"
+            android:text="TEST"
+            android:visibility="gone"
+            android:textColor="@color/txt_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/secondValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/font_regular"
+            android:gravity="center"
+            android:text="ODI"
+            android:visibility="gone"
+            android:textColor="@color/txt_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/thirdValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/font_regular"
+            android:gravity="center"
+            android:text="T20I"
+            android:visibility="gone"
+            android:textColor="@color/txt_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/fourthValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/font_regular"
+            android:gravity="center"
+            android:text="IPL"
+            android:visibility="gone"
+            android:textColor="@color/txt_color"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkstatusbar1"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.home.PlayerRankingTypeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Ranking"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/black"
+        style="@style/font_bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/testBatsman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle"
+            android:backgroundTint="@color/white"
+            android:text="Test Batsman"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/testBowler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:text="Test Bowlers"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/testAllrounder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:text="Test Allrounders"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/odiBatsman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:text="ODI Batsman"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/odiBowler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:text="ODI Bowlers"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/odiAllrounder"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle"
+            android:text="ODI Allrounders"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/t20Batsman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle"
+            android:backgroundTint="@color/white"
+            android:text="T20 Batsman"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/t20Bowler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:text="T20 Bowlers"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/t20Allrounder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:text="T20 Allrounders"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+
+        <TextView
+            android:id="@+id/womenOdiBatsman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle"
+            android:backgroundTint="@color/white"
+            android:text="Women's ODI Batting"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/womenOdiBowler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle"
+            android:backgroundTint="@color/white"
+            android:text="Women's ODI Bowling"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/womenOdiAllrounder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:text="Women's ODI Allrounders"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/womenT20Batsman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:text="Women's T20 Batting"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/womenT20Bowler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle"
+            android:backgroundTint="@color/white"
+            android:text="Women's T20 Bowling"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/womenT20Allrounder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:text="Women's T20 Allrounders"
+            android:textColor="@color/black"
+            style="@style/font_bold"
+            android:textSize="@dimen/_12sdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:drawableTint="@color/black"
+            android:padding="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+</layout>

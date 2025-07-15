@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItemNewsTopicsBinding">
+
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:background="@color/card_view_white"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            style="@style/font_regular"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:maxLines="3"
+            tools:text="News"
+            android:textColor="@color/txt_color"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            style="@style/font_regular"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:maxLines="2"
+            tools:text="All the latest that is news - breaking or otherwise"
+            android:textColor="@color/txt_lgt"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
+</layout>

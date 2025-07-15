@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItemBrowsTeamsCricbuzzBinding">
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card_view_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_light"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            tools:text="fgfdg"
+            style="@style/font_regular"
+            android:textAllCaps="true"
+            android:textColor="@color/txt_color"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/linearTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_margin="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/teamImage"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_18sdp"
+                tools:src="@mipmap/ic_launcher"
+                android:scaleType="fitXY"/>
+
+
+            <TextView
+                android:id="@+id/teamName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="fgfdg"
+                android:layout_marginLeft="@dimen/_10sdp"
+                style="@style/font_regular"
+                android:textColor="@color/txt_color"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+    </LinearLayout>
+
+</layout>

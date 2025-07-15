@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/commentaryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:scrollbars="none"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                >
+
+                <TextView
+                    android:id="@+id/commentaryAll"
+                    android:backgroundTint="@color/yellow_lgt"
+                    android:background="@drawable/shape_rectangle"
+                    android:paddingLeft="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:text="@string/live_comentary_all"
+                    />
+
+                <TextView
+                    android:id="@+id/commentaryOvers"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:text="@string/live_comentary_overs"
+                    />
+
+                <TextView
+                    android:id="@+id/commentaryWicket"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="W"
+                    />
+
+                <TextView
+                    android:id="@+id/commentaryFours"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="4"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/commentarySix"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="6"
+                    />
+
+                <TextView
+                    android:id="@+id/firstInning"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/live_comentary_firstinning"
+                    />
+
+                <TextView
+                    android:id="@+id/secondInning"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/live_comentary_secondinning"
+                    />
+
+                <TextView
+                    android:id="@+id/thirdInning"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/live_comentary_thirdinning"
+                    />
+
+                <TextView
+                    android:id="@+id/fourthInning"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/live_comentary_fourthinning"
+                    />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCommentary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_match_commentary"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linearlayout_if_live_not_show_image"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/ic_undraw_season_calender"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_livescorepage_upcomingdateshow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/font_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="Come back soon"
+                    />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_livescorepage_upcomingdateshow"
+                    android:layout_toRightOf="@+id/tv_livescorepage_upcomingdateshow1"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    style="@style/font_regular"
+                    android:text=""
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/custom_progress" />
+
+    </RelativeLayout>
+</layout>

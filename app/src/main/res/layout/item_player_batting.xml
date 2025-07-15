@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data
+        class="ItemPlayerBattingListBinding">
+
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/playerType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            tools:text="Batting"
+            android:textSize="14sp"
+            style="@style/font_bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/playerTest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Test"
+            android:gravity="center"
+            android:textSize="14sp"
+            style="@style/font_regular"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/playerOdi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="ODI"
+            android:gravity="center"
+            android:textSize="14sp"
+            style="@style/font_regular"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/playerT20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="T20I"
+            android:gravity="center"
+            android:textSize="14sp"
+            style="@style/font_regular"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/playerIpl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="IPL"
+            android:gravity="center"
+            android:textSize="14sp"
+            style="@style/font_regular"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

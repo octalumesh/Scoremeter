@@ -1,0 +1,106 @@
+<resources>
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <!-- light day mode theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">@color/colorPrimary</item>
+        <item name="cardBackgroundColor">@color/colorPrimaryDark</item>
+        <item name="textColor">@color/card_view_white</item>
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransitions</item>
+    </style>
+
+    <!-- night mode dark theme. -->
+    <style name="darkthememode" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#000000</item>
+        <item name="backgroundColor">#303030</item>
+        <item name="cardBackgroundColor">#424242</item>
+        <item name="textColor">@color/text_white</item>
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransitions</item>
+    </style>
+
+    <style name="windowAnimationTransitions">
+<!--        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>-->
+<!--        <item name="android:windowExitAnimation">@android:anim/fade_out</item>-->
+
+        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="AppThemeLivePage" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+    <style name="tab_text_font" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="bottomnav_text_font" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/arial_semibold</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="font_bold" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="font_light" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="font_medium" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="font_regular" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="font_semibold" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+    <style name="BaseBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/background_bottom_sheet</item>
+    </style>
+
+    <style name="AlertDialogCustomTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+<!--        &lt;!&ndash; Used for the buttons &ndash;&gt;-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        &lt;!&ndash; Used for the title and text &ndash;&gt;-->
+<!--        <item name="android:textColorPrimary">#FFFFFF</item>-->
+<!--        &lt;!&ndash; Used for the background &ndash;&gt;-->
+<!--        <item name="android:background">@color/limeGreen</item>-->
+    </style>
+
+</resources>

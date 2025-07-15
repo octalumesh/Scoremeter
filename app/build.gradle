@@ -1,0 +1,105 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.serialization'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.cricbuzzplus.liveline"
+        minSdk 25
+        targetSdk 36
+        versionCode 4
+        versionName "4.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_21.toString()
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+        buildConfig true
+    }
+
+    namespace 'com.cricbuzzplus.liveline'
+}
+
+dependencies {
+
+
+    implementation 'androidx.core:core-ktx:1.16.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.9.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.9.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.9.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation "com.android.support:multidex:2.0.1"
+    implementation 'com.squareup.retrofit2:retrofit:3.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:3.0.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:3.0.0'
+    implementation 'com.google.code.gson:gson:2.13.1'
+    implementation 'com.google.android.gms:play-services-ads:24.4.0'
+
+
+    implementation platform('com.google.firebase:firebase-bom:33.16.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx:23.2.1'
+    implementation 'com.google.firebase:firebase-database-ktx:21.0.0'
+    implementation 'com.google.firebase:firebase-auth:23.2.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx:25.1.4'
+    implementation 'com.google.firebase:firebase-messaging-ktx:24.1.2'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:19.4.4'
+
+    implementation 'com.facebook.android:facebook-android-sdk:18.0.3'
+    implementation 'com.facebook.android:facebook-login:18.0.3'
+
+    implementation 'com.github.HuanHaiLiuXin:CoolViewPager:v1.0.0'
+
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:3.2.0'
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.1'
+    implementation 'com.airbnb.android:lottie:6.6.7'
+
+    implementation 'com.google.android.gms:play-services-auth:21.3.0'
+    implementation("com.google.android.play:app-update-ktx:2.1.0")
+    //implementation 'com.google.android.play:core-ktx:1.8.1'
+   // implementation 'com.google.android.play:core:1.10.3'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    implementation 'com.github.martinstamenkovski:ARIndicatorView:2.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+}

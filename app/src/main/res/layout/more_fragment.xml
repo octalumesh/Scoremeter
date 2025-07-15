@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical"
+        tools:context=".livedata.ui.fragment.MoreFragment">
+
+        <RelativeLayout
+            android:id="@+id/toolbarhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkstatusbar1"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/title_more"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_share_24"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="7dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/card_view_white">
+
+                    <RelativeLayout
+                        android:id="@+id/profile_Rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_12sdp">
+
+                        <ImageView
+                            android:id="@+id/profile_user"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/user_icon"
+                            app:tint="@color/txt_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/profile_user"
+                            style="@style/font_regular"
+                            android:text="Profile"
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/txt_color" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="7dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/card_view_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_playerRanking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/profile_imagerankingp"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/browse_teams"
+                                app:tint="@color/yellow_lgt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_imagerankingp"
+                                style="@style/font_regular"
+                                android:text="Player Ranking"
+                                android:textColor="@color/txt_color" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_teamRanking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/profile_imageranking"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/browse_players"
+                                app:tint="@color/yellow_lgt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_imageranking"
+                                style="@style/font_regular"
+                                android:text="Team Ranking"
+                                android:textColor="@color/txt_color" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_series"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/seriesImage"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/info_series"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/seriesImage"
+                                style="@style/font_regular"
+                                android:text="Browse Series"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_browseTeams"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_teams"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_baseline_supervisor_account_24"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_teams"
+                                style="@style/font_regular"
+                                android:text="@string/browse_teams"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_browsePlayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_player"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_baseline_person_outline_24"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_player"
+                                style="@style/font_regular"
+                                android:text="@string/browse_player"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_arc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="7dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/card_view_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_schedule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/profile_schedule"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_baseline_calendar_month_24"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_schedule"
+                                style="@style/font_regular"
+                                android:text="Schedule"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <include
+                            layout="@layout/item_divider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_gravity="right"
+                            android:visibility="visible"
+                            tools:ignore="IncludeLayoutParam" />
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_archives"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_archives"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_baseline_restore_24"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_archives"
+                                style="@style/font_regular"
+                                android:text="@string/archives"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/cardview_pho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="7dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/card_view_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_photos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/profile_photos"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/image"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_photos"
+                                style="@style/font_regular"
+                                android:text="@string/photos"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <include
+                            layout="@layout/item_divider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_gravity="right"
+                            android:visibility="visible"
+                            tools:ignore="IncludeLayoutParam" />
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_quotes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_quotes"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/quote"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_quotes"
+                                style="@style/font_regular"
+                                android:text="@string/quotes"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/cardview_icc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="7dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/card_view_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_iccmensRanking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_iccmens"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/browse_teams"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_iccmens"
+                                style="@style/font_regular"
+                                android:text="@string/icc_mens_ranking"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_iccwomensRanking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_iccwomens"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/browse_teams"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_iccwomens"
+                                style="@style/font_regular"
+                                android:text="@string/icc_women_s_ranking"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_records"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_records"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/growth_graph"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_records"
+                                style="@style/font_regular"
+                                android:text="@string/icc_records"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_extra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="7dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/card_view_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_wtc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/profile_wtc"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/image"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_wtc"
+                                style="@style/font_regular"
+                                android:text="@string/wtc"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <include
+                            layout="@layout/item_divider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:layout_gravity="right"
+                            android:visibility="visible"
+                            tools:ignore="IncludeLayoutParam" />
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_league"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_league"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/quote"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_league"
+                                style="@style/font_regular"
+                                android:text="@string/super_league"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="7dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/card_view_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_refer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_refer"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/refer_earn"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_refer"
+                                style="@style/font_regular"
+                                android:text="Refer and Earn"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_shareapp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_image16"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_baseline_share_24"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_image16"
+                                style="@style/font_regular"
+                                android:text="Share App"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_rateus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_image17"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/rate_us"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_image17"
+                                style="@style/font_regular"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="Rate Us"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+                        <RelativeLayout
+                            android:id="@+id/cardview_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_settings"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/settings"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_settings"
+                                style="@style/font_regular"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="@string/settings"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="50dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/card_view_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/aboutUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_image2"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/about_us"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_image2"
+                                style="@style/font_regular"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="About Us"
+                                android:textColor="@color/txt_color" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+                        <RelativeLayout
+                            android:id="@+id/termsCondition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_image22"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/terms_of_use"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_image22"
+                                style="@style/font_regular"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="Terms &amp; Conditions"
+                                android:textColor="@color/txt_color" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/privacyPolicy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_image19"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_baseline_privacy_tip_24"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_image19"
+                                style="@style/font_regular"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="Privacy Policy"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_view" />
+
+                        <RelativeLayout
+                            android:id="@+id/contactUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/profile_image20"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_baseline_supervisor_account_24"
+                                app:tint="@color/txt_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/profile_image20"
+                                style="@style/font_regular"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="Contact Us"
+                                android:textColor="@color/txt_color" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="@dimen/_3sdp"
+            app:cardUseCompatPadding="true">
+
+            <com.huanhailiuxin.coolviewpager.CoolViewPager
+                android:id="@+id/viewPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:cvp_autoscroll="true"
+                app:cvp_autoscrolldirection="forward"
+                app:cvp_drawedgeeffect="true"
+                app:cvp_edgeeffectcolor="@color/colorPrimary"
+                app:cvp_infiniteloop="true"
+                app:cvp_intervalinmillis="2000"
+                app:cvp_scrollduration="800"
+                app:cvp_scrollmode="horizontal" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/darkstatusbar"
+            android:backgroundTint="@color/darkstatusbar"
+            android:visibility="gone"
+            app:adSize="BANNER"
+            app:adUnitId="@string/addId" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/darkstatusbar"
+            android:backgroundTint="@color/darkstatusbar"
+            android:visibility="gone"
+            app:adSize="BANNER"
+            app:adUnitId="@string/addId" />
+
+
+    </LinearLayout>
+</ScrollView>

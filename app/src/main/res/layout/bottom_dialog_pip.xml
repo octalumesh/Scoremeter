@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:background="@color/green_table"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pin score"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            style="@style/font_semibold"
+            android:textColor="@color/gray"/>
+
+
+        <ImageView
+            android:id="@+id/closeImg"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/close_ic"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To pin score on your display, allow Cricbuzz Plus to display over other apps"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="15sp"
+        style="@style/font_regular"
+        android:textColor="@color/black"/>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:src="@drawable/overapps"/>
+
+
+
+    <Button
+        android:id="@+id/bottomContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow now in system settings"
+        android:textSize="15sp"
+        android:textColor="@color/white_lgt"
+        style="@style/font_bold"
+        android:background="@drawable/gradiant_round"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp"/>
+
+
+
+    <TextView
+        android:id="@+id/bottomNotNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOT NOW"
+        android:textSize="15sp"
+        android:visibility="gone"
+        style="@style/font_regular"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+
+</LinearLayout>

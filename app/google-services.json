@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "246030429456",
+    "project_id": "cricbuzzplus-d3f94",
+    "storage_bucket": "cricbuzzplus-d3f94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246030429456:android:ec9586ed31990a870e4995",
+        "android_client_info": {
+          "package_name": "com.cricbuzzplus.liveline"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtFKhBkDaExGraMuDy8dAC2XqpjCLsBN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

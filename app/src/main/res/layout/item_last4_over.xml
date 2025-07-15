@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data
+        class="ItemLast4OverBinding">
+
+    </data>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Over 13"
+        style="@style/font_regular"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@color/red_mild"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOverRuns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_5sdp"
+        tools:itemCount="6"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/itam_latest_balls"/>
+
+    <TextView
+        android:id="@+id/overRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="= 13"
+        android:layout_gravity="center"
+        style="@style/font_regular"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@color/txt_color"/>
+
+</LinearLayout>
+
+</layout>

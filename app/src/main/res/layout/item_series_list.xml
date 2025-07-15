@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_option_a"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="1dp"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:padding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rerlative_teama_squa"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_squad_player"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                app:tint="@color/black"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+           <!-- arial_semibold
+
+            inter_medium
+
+            sora_medium-->
+
+            <TextView
+                android:id="@+id/tv_series_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rerlative_teama_squa"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                style="@style/font_bold"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/darkstatusbar_teamname"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_series_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_series_name"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/rerlative_teama_squa"
+                android:text="--"
+                android:textColor="@color/gray"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:id="@+id/tv_total_matches"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_series_name"
+                android:textSize="10sp"
+                android:text="--"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:layout_width="wrap_content" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

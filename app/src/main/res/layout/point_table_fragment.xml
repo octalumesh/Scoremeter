@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkstatusbar1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".livedata.ui.fragment.PointTableFragment">
+
+    <TextView
+        android:id="@+id/tv_series_pointtable_notfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:elevation="@dimen/_5sdp"
+        android:background="@drawable/shape_rectangle"
+        android:backgroundTint="@color/white"
+        android:paddingHorizontal="7dp"
+        android:paddingVertical="7dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_pointtable1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/team"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Team "
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/team"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_series_team_play_match1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Match"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    style="@style/font_bold"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textview_series_team_win1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_toRightOf="@id/textview_series_team_play_match1"
+                    android:gravity="center_horizontal"
+                    android:text="Won"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    style="@style/font_bold"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textview_series_team_lose1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_toRightOf="@id/textview_series_team_win1"
+                    android:gravity="center_horizontal"
+                    android:text="Lose"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    style="@style/font_bold"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textview_series_team_notresult1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_toRightOf="@id/textview_series_team_lose1"
+                    android:gravity="center_horizontal"
+                    android:text="No R"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    style="@style/font_bold"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textview_series_team_point1"
+                    android:layout_width="34dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/textview_series_team_notresult1"
+                    android:gravity="center_horizontal"
+                    android:text="Pts"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_scrbordbtn_act"
+                    style="@style/font_bold"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textview_series_team_nrr1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_toRightOf="@id/textview_series_team_point1"
+                    android:gravity="center_horizontal"
+                    android:text="Net RR"
+                    android:textAlignment="center"
+                    android:textColor="@color/yellow_lgt"
+                    style="@style/font_bold"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/include_divider0_pointtable"
+            layout="@layout/item_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relative_pointtable1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_recycler_batsman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_pointtable1"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_series_pointtable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".livedata.ui.fragment.GraphFragment">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/linearButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/wormGraph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/shape_rectangle"
+                        android:backgroundTint="@color/yellow_lgt"
+                        style="@style/font_regular"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="@string/live_graph_worm"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/manhattanGraph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/shape_rectangle"
+                        android:backgroundTint="@color/gray_dark"
+                        style="@style/font_regular"
+                        android:paddingHorizontal="@dimen/_15sdp"
+                        android:text="@string/live_graph_manhattan"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/runRateGraph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/shape_rectangle"
+                        android:backgroundTint="@color/gray_dark"
+                        style="@style/font_regular"
+                        android:paddingHorizontal="@dimen/_15sdp"
+                        android:text="Odds Graph"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <FrameLayout
+                android:id="@+id/frameWormChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/card_view_white"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="Runs"
+                    android:textColor="@color/txt_color" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="Ovr"
+                    android:textColor="@color/txt_color" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_below="@id/inningButton"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/shape_rectangle"
+                    android:backgroundTint="@color/card_view_white" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameOddsChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/card_view_white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="Odds"
+                    android:textColor="@color/txt_color" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="Ovr"
+                    android:textColor="@color/txt_color" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:elevation="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/teamANameOdds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/shape_rect_graph"
+                        android:drawablePadding="@dimen/_2sdp"
+                        android:drawableTint="@color/yelow_mild"
+                        android:gravity="center"
+                        android:textColor="@color/txt_color"
+                        android:textSize="10sp"
+                        tools:text="teama" />
+
+                    <TextView
+                        android:id="@+id/teamBNameOdds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/shape_rect_graph"
+                        android:drawablePadding="@dimen/_2sdp"
+                        android:drawableTint="@color/text_normal_analysis"
+                        android:gravity="center"
+                        android:textColor="@color/txt_color"
+                        android:textSize="10sp"
+                        tools:text="teama" />
+
+
+                    <TextView
+                        android:id="@+id/teamDonoOdds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/shape_rect_graph"
+                        android:drawablePadding="@dimen/_2sdp"
+                        android:drawableTint="@color/text_normal_analysis2"
+                        android:gravity="center"
+                        android:text="Dono"
+                        android:textColor="@color/txt_color"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/oddsChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_below="@id/inningButton"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/rectangle_button_shape"
+                    android:backgroundTint="@color/card_view_white"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameBarChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/card_view_white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="Runs"
+                    android:textColor="@color/txt_color" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="Ovr"
+                    android:textColor="@color/txt_color" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_below="@id/inningButton"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/rectangle_button_shape"
+                    android:backgroundTint="@color/card_view_white"
+                    android:visibility="visible" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inningButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/firstInning"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:background="@drawable/shape_rectangle"
+                android:backgroundTint="@color/yellow_lgt"
+                style="@style/font_regular"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:text="1st Inning"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/secondInning"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:background="@drawable/shape_rectangle"
+                android:backgroundTint="@color/gray_dark"
+                style="@style/font_regular"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:text="2nd Inning"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inningButtonOdds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/firstInningOdds"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:background="@drawable/shape_rectangle"
+                android:backgroundTint="@color/yellow_lgt"
+                style="@style/font_regular"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:text="1st Inning"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/secondInningOdds"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:background="@drawable/shape_rectangle"
+                android:backgroundTint="@color/gray_dark"
+                style="@style/font_regular"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:text="2nd Inning"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_odds_not_show"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/stopwatch"
+            app:tint="@color/gray"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/noData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font_regular"
+                android:textSize="15sp"
+                android:textColor="@color/gray_dark"
+                android:text="Data not found"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+</layout>
