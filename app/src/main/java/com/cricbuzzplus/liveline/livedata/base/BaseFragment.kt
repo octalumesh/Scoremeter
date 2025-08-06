@@ -67,14 +67,13 @@ open class BaseFragment : Fragment(), View.OnClickListener {
     // lateinit var mRewardedVideoAd: RewardedVideoAd
     //lateinit var db:FirebaseFirestore
 
-    lateinit var homeBinding: ActivityHomeBinding
+    //var homeBinding: ActivityHomeBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeBinding = ActivityHomeBinding.inflate(inflater)
         return super.onCreateView(inflater, container, savedInstanceState)
     }
 
@@ -109,21 +108,25 @@ open class BaseFragment : Fragment(), View.OnClickListener {
 
 
     fun handleProgressLoader(isLoading: Boolean) {
-        if (homeBinding.progressLayout.root == null) {
-            activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
-            return
-        }
-
-        if (isLoading) {
-            homeBinding.progressLayout.root.visibility = View.VISIBLE
-            activity.getWindow().setFlags(
-                WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
-                WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE
-            );
-        } else {
-            homeBinding.progressLayout.root.visibility = View.GONE
-            activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
-        }
+//        if(homeBinding == null) {
+//            homeBinding = ActivityHomeBinding.inflate(activity.layoutInflater)
+//        }
+//
+//        if (homeBinding?.progressLayout!!.root == null) {
+//            activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
+//            return
+//        }
+//
+//        if (isLoading) {
+//            homeBinding?.progressLayout!!.root.visibility = View.VISIBLE
+//            activity.getWindow().setFlags(
+//                WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
+//                WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE
+//            );
+//        } else {
+//            homeBinding!!.progressLayout.root.visibility = View.GONE
+//            activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
+//        }
     }
 
     fun handleError(error: String) {
@@ -705,7 +708,7 @@ open class BaseFragment : Fragment(), View.OnClickListener {
                                     ) {
 
                                         seriesIdCricLiveData.value =
-                                            matchItem?.seriesAdWrapper?.seriesId
+                                            matchItem?.seriesAdWrapper?.seriesId!!
                                         Log.e(
                                             "TAGPlayer",
                                             "onCreateView:  true  series -- $series  ,  seriesId -- ${matchItem?.seriesAdWrapper?.seriesId}"

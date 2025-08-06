@@ -15,6 +15,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.WindowCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
@@ -83,7 +84,6 @@ class HomeActivity : BaseActivity() {
         viewModel = ViewModelProvider(this).get(UsersViewModel::class.java)
         setContentView(binding.root)
         //renderUpdates();
-
         window.statusBarColor = ContextCompat.getColor(this@HomeActivity, R.color.colorPrimaryDark)
 
         /*binding.adView.adSize = AdSize.BANNER

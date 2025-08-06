@@ -181,7 +181,7 @@ class SplashActivity : BaseActivity() {
             if (snapshot != null) {
                 for (dc in snapshot.documentChanges) {
                     val keyModel = dc.document.toObject(KeyModel::class.java) as KeyModel
-                    mPrefs.prefApiToken = keyModel.key
+                    mPrefs.prefApiToken = "270a45b49e775380cd3ca724f3473913"//keyModel.key
                     //  redirect()
                 }
             }

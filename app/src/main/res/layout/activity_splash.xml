@@ -8,10 +8,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_180sdp"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="@dimen/_100sdp"
-        android:layout_marginRight="@dimen/_100sdp"
+        android:layout_marginHorizontal="66dp"
         android:src="@drawable/cricbuzzlogo" />
 
     <include

@@ -17,18 +17,19 @@ object Constants {
     const val LoginURl: String = "https://backend.cricbuzzplus.com/"
 
     // const val CricBuzzURl: String = "http://68.183.94.44:25125/"
-    // const val CricBuzzURl: String = "https://blazerbob.com/cricbuzz/"
-    const val CricBuzzURl: String = "http://143.244.129.51:25125/"
+     const val CricBuzzURl: String = "https://blazerbob.com/cricbuzz/"
+    //    const val CricBuzzURl: String = "http://143.244.129.51:25125/"
+    // const val CricBuzzURl: String = "http://sportzing.in:7500/api/"
     // const val CricBuzzURl: String = "http://blazerbob.com:25125/"
 
     // const val ImgURl: String = "https://backend.heroliveline.com/"
     //  const val ImgURl: String = "https://backend.jaipuracre.com/"
     const val ImgURl: String = "https://backend.cricbuzzplus.com/uploads"
-   // const val ImgURl: String = "http://192.168.0.20:5500/uploads"
+    // const val ImgURl: String = "http://192.168.0.20:5500/uploads"
 
     //const val cricHeader ="ecb779212fb447b2940f4dc21fde7ae6"
     //const val cricHeader = "e6ca3f66ee1c4b2ca8ae1d5ee6565010"
-    const val cricHeader = "270a45b49e775380cd3ca724f3473913"
+    const val cricHeader = "dd03aacd3fd046d7a94c1cb479f9510c"
 
     //const val ImgURl:String="http://192.168.0.21:5500/"
     const val cricbuzzImgFirst: String = "https://api.cricbuzz.com/a/img/v1/i1/c"
